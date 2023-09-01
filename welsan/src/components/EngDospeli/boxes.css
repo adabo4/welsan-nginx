@@ -1,0 +1,50 @@
+.boxes-container{
+    width: 1000px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--p-font);
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.box-text{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.box-text h3{
+    font-size: 25px;
+    margin: 15px auto;
+    color: white;
+   
+}
+
+.box-text p{
+    font-size: 15px;
+    margin: 5px auto;
+    
+   
+}
+
+@media screen and (max-width: 1110px) {
+    .boxes-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .box-text{
+        justify-content: space-between;
+    }
+}

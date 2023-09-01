@@ -1,0 +1,258 @@
+/* Kurzy */
+
+/* .kurzy-container{
+    height: auto;
+    width: 1000px;
+    display: flex;
+    margin: 2rem auto;
+    position: relative;
+    flex-direction: column;
+    
+   
+   } */
+   
+   /* .kurzy-headline{
+     
+     width: 100%;
+     height: 40%;
+     position: relative; 
+     display: flex;
+     justify-content: flex-end; 
+     align-items: center;
+   
+     
+   } */
+   
+/*   
+   
+   .kurzy-headline .small-circle{
+     background-color: rgba(112,175,24, 1);
+     position: absolute;
+     left: 43%;
+     z-index: -1;
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     bottom:26%;
+   } */
+   
+   /* .kurzy-headline .line{
+     
+     position: absolute;
+     left: 36%; 
+     bottom:18%;
+     width: 63%;
+   }
+    */
+   /* .kurzy-headline .thin{
+     position: absolute;
+     left :36%;
+     bottom: 25%;
+     width: 63%;
+     
+   
+   } */
+   
+   .kurzy-headline h3{
+     font-size: 35px;
+     
+   }
+   
+   /* .kurzy-headline .butterfly-img{
+     left:0;
+     position: absolute;
+     width: 8rem;
+    
+   } */
+   
+   /* .kurzy-headline .flower-img{
+     width: 8rem;
+   } */
+   
+   @media screen and (max-width: 1110px) {
+     /* .kurzy-container{
+       margin: 0 auto ;
+       width: 100%;
+       height: auto;
+   
+     } */
+   
+      /* .kurzy-headline{
+        flex-direction: column;
+      }
+      */
+     /* .kurzy-headline .butterfly-img{
+       position: relative;
+       margin: 1rem 0 ;
+       align-self: flex-start;
+       transform: translate(50px, 50px);
+
+     }
+   
+     .kurzy-headline .flower-img{
+       position: relative;
+       width: 8rem;
+       margin: 2rem 0;
+       align-self: flex-end;
+       right: 20%;
+     } */
+     
+     /* .kurzy-headline .small-circle{
+       position: relative;
+       left: 0;
+       top: 75px;
+   
+     } */
+   
+     /* .kurzy-headline .line, .kurzy-headline .thin{
+      position: inherit;
+      width: 110%;
+   } */
+   
+   
+   }
+   
+   @media screen and (max-width: 768px) {
+     /* .kurzy-container{
+       margin: 0 5%;
+     }
+   
+     .kurzy-headline .line, .kurzy-headline .thin{
+       width: 110%;
+    } */
+     
+   }
+   
+   @media screen and (max-width: 550px) {
+     /* .kurzy-container{
+       margin: 0 5px ;
+     }  */
+   
+     /* .kurzy-headline{
+      align-items: center ;
+      justify-content: center;
+     } */
+     /* .kurzy-headline .line, .kurzy-headline .thin{
+       width: 95%;
+    } */
+    
+
+    .kurzy-headline h3{
+      font-size: 30px;
+      text-align: center;
+
+    } 
+   
+   }
+   
+   /* Typy kurzov */
+   
+   
+   .course-types{
+     /* position: relative;
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap; */
+
+     /*toto je zle */
+     /* flex-basis: 50%; */
+     /* align-items: flex-end; */
+     /* text-align: center; */
+   }
+   
+   .courses-box{
+     /* width: 230px;
+     margin: 0.5em;
+     text-align: start;
+     font-family: 'Open Sans', sans-serif;
+     padding: 1px; 
+     min-height: 230px;
+     display: flex;
+     flex-direction: column; */
+     /* nechcem align-items: flex-start; */
+      
+   }
+   
+   /* .course-text-box{
+     margin: auto;
+   } */
+   
+   /* .type-button{
+     
+     align-self: flex-end;
+     margin: auto;
+   } */
+   
+   /* .btn-info-2:nth-child(3){
+     align-self: flex-end;
+   }
+    */
+   /* h4{
+    
+     font-size: 18px;
+   
+   } */
+   
+   /* .courses-box p{
+     line-height: 1.5em;
+     font-size: 14px;
+     
+   } */
+   
+   /* .btn-info-2{
+   background-color:#ffffff;
+       border-radius:28px;
+       border:1px solid #000000;
+       cursor:pointer;
+       color:#000000;
+     font-weight: 500;
+       font-family:Arial;
+       font-size:14px;
+       padding:10px 35px;
+       text-decoration:none;
+       text-shadow:0px 1px 0px #ffffff;
+     margin: 1rem;
+     text-align: center;
+   
+   
+    
+     
+    
+    
+   
+   }
+   
+   .btn-info-2:hover{
+     background-color:#161515;
+     transition: ease-in-out 0.3s;
+     color:white;
+   }
+   
+   .btn-info-2:active{
+     position:relative;
+       top:1px;
+   }
+   
+   .btn-info-2 a{
+     text-decoration: none;
+     color: inherit;
+   }
+    */
+   
+   @media screen and (max-width:550px){
+   
+     /* .courses-box{
+         margin: 0 auto;
+         align-items: flex-start;
+         justify-content: flex-start;
+     } */
+
+    
+   
+   
+     
+   }
+   
+   
+    
+    

@@ -1,0 +1,96 @@
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(45deg, #bfa9f0, #f4a8ce); */
+    margin: 2rem auto;
+    /* border: outset rgb(181, 61, 61) 1px; */
+    z-index: -1;
+    
+
+
+}
+
+.date { color: red; font-weight: bold; }
+
+.wrapper::before{
+    content: " ";
+    background-image: linear-gradient(45deg, #bfa9f0, #f4a8ce);
+    opacity: 0.2;
+    position: absolute;
+    top: -5%;
+    right: 5%;
+    bottom: -5%;
+    left: 5%;   
+    /* top: 47%;
+    right: 5%;
+    left: 5%;
+    bottom: 25%; */
+
+}
+
+
+.accordion{
+    width: 80%;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+    z-index: +1;
+  
+}
+
+
+
+.nadpis{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: var(--h1-li-font-enriqueta);
+    border-bottom: 1px dotted purple;
+    padding-bottom: 10px;
+
+    
+}
+
+
+.obsah{
+    width: 90%;
+    text-align: justify;
+    margin: 1rem auto;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: var(--p-font);
+    max-height: 0;
+    overflow: hidden;
+    
+}
+
+.obsah.show{
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+
+}
+
+
+@media screen and (max-width: 1110px) {
+    .obsah{
+        text-align: start;
+    }
+
+    .wrapper::before{
+        /* top: 75%; */
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    
+
+    /* .wrapper::before{
+        top: 78%;
+    } */
+    
+}
+

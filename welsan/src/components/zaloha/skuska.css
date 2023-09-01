@@ -1,0 +1,32 @@
+.najvacsi-kontajner{
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+
+}
+
+.velky-kontajner{
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: 4em auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.lava{
+    width: 65%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.prava{
+    width: 35%;
+}

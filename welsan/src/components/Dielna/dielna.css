@@ -1,0 +1,317 @@
+.tvoriva-dielna-container {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.dielna-bubbles-container {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    margin: 2em;
+
+}
+
+
+.dielna-bubbles-box {
+    display: flex;
+    justify-content: flex-start;
+    height: 600px;
+    position: relative;
+    left: 4%;
+    z-index: -1;
+
+
+}
+
+.pink-bubble h2 {
+    font-family: var(--josefin-font);
+    line-height: 1.3em;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+
+.pink-bubble {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--pinkcolor);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pink-bubble span {
+    text-transform: uppercase;
+}
+
+.pink-bubble p {
+    font-family: var(--h1-li-font-enriqueta);
+    width: 350px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.3em;
+    margin: 1rem;
+    color: white;
+}
+
+.pink-bubble .first-line,
+.pink-bubble .second-line,
+.pink-bubble .bubble-dotted {
+    width: 400px;
+    margin: 2px auto;
+
+
+
+}
+
+.video-bubble {
+    height: 600px;
+}
+
+
+
+.video-bubble video {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-position: 50%;
+    object-fit: cover;
+    box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+    align-self: flex-start;
+}
+
+/* About dielna text */
+
+.about-dielna {
+    position: relative;
+}
+
+.about-dielna h2 {
+    color: var(--pinkcolor);
+    font-size: 18px;
+    margin: 1rem auto;
+    text-align: start;
+    font-weight: bold;
+    font-family: var(--h1-li-font-enriqueta);
+}
+
+.about-dielna p {
+    font-family: var(--p-font);
+    font-size: 14px;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.about-dielna span {
+    font-weight: bold;
+}
+
+
+/* Malovanie figurok */
+
+.malovanie {
+    display: flex;
+    width: 1000px;
+    flex-wrap: nowrap;
+    margin: 2rem auto;
+
+}
+
+.malovanie-figurok {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.malovanie-figurok img {
+    height: 450px;
+
+}
+
+.separate {
+    width: 100%;
+    display: flex;
+
+}
+
+.malovanie-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    height: 350px;
+
+
+}
+
+.malovanie-text h3 {
+    margin: 2rem auto;
+    font-family: var(--h1-li-font-enriqueta);
+    font-weight: 600;
+}
+
+.malovanie-text p {
+    font-family: var(--p-font);
+    font-size: 14px;
+    line-height: 1.6em;
+    margin: 6px;
+}
+
+@media screen and (max-width: 1110px) {
+
+    .tvoriva-dielna-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .dielna-bubbles-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: unset;
+    }
+
+    .dielna-bubbles-box {
+        align-items: center;
+        left: unset;
+        margin: 1rem auto;
+        height: auto;
+    }
+
+    .about-dielna {
+        width: 80%;
+        text-align: center;
+    }
+
+    .video-bubble {
+        height: auto;
+    }
+
+    .malovanie {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .malovanie-figurok {
+        width: 350px;
+
+    }
+
+    .separate {
+        justify-content: space-around;
+    }
+
+    .separate:nth-child(2) {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .separate,
+    .separate:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .malovanie-figurok {
+        width: 80%;
+    }
+
+    .malovanie-figurok img {
+
+        margin: 0 auto;
+
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .pink-bubble {
+        width: 350px;
+        height: 350px;
+
+    }
+
+    .pink-bubble .first-line,
+    .pink-bubble .second-line,
+    .pink-bubble .bubble-dotted {
+        width: 220px;
+        margin: 2px auto;
+
+
+
+    }
+
+    .video-bubble video {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .about-dielna p,
+    .about-dielna h2 {
+        text-align: center;
+    }
+
+
+
+    .pink-bubble {
+        width: 250px;
+        height: 250px;
+
+    }
+
+    .pink-bubble .first-line,
+    .pink-bubble .second-line,
+    .pink-bubble .bubble-dotted {
+        width: 200px;
+        margin: 2px auto;
+
+
+
+    }
+
+    .video-bubble video {
+        width: 250px;
+        height: 250px;
+    }
+
+    .pink-bubble p {
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1em;
+        margin: 5px;
+    }
+
+    .pink-bubble h2 {
+        font-size: 18px;
+    }
+
+    .malovanie-figurok img {
+        width: 100%;
+        height: auto;
+    }
+}

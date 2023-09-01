@@ -1,0 +1,347 @@
+.big-container{
+    display: flex;
+    position: relative;
+    margin: 0;
+    width: 100%;
+  
+    align-items: center; /*bolo flex-end*/
+    /* */
+    flex-direction: column-reverse;
+    
+
+}
+
+.big-container .line-container{
+    width: 70%;
+}
+
+.container-slider{
+    width: 100%;
+    max-width: 70%; /*tuto bolo 1000px*/
+    height: 70vh;
+    margin:  50px auto 0 ;
+    /* margin: 50px 250px 0; */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    z-index: +1;
+    
+}
+
+
+.slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity ease-in-out 0.4s;
+    border: 1px solid black;
+    
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.active-anim{
+    opacity: 1; 
+}
+
+.btn-slide{
+   background-color: transparent;
+    border:none;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: .25rem;
+    opacity: 0.5;
+    
+    
+
+}
+
+.btn-slide img{
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+    
+}
+
+.prev{
+    top: 50%;
+    left: 20px;
+    transform: translateY(-60%);
+
+}
+
+.next{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-60%);
+}
+
+.prev:hover, .next:hover,
+.prev:focus, .next:focus{
+  color:white;
+  background-color: rgba(0,0,0,.2);
+  outline: 1px solid black;
+  opacity: 1;
+ 
+}
+
+/* .eng-bubble-box{
+    position: absolute;
+    border: 1px solid red;
+    transform: translate(-100px, -450px);
+    display: flex;
+
+} */
+
+.eng-bubble{
+    position: absolute;
+    width: 405px;
+    height: 405px;
+    border-radius: 50%;
+    background-color: black;
+    /* left: 50%;
+    top: 10%; */
+    left: 45%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    z-index: +2;
+     
+
+}
+
+.eng-bubble-text{
+    color:white;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    text-align: center;
+    padding: 25% 0;
+   
+
+
+}
+.eng-bubble-text h1{
+    font-size: 65px;
+    line-height: 1.1em;
+}
+
+.eng-bubble-text p{
+    font-size: 18px;
+    line-height: 1.3em;
+   
+}
+
+.first-line, 
+.second-line{
+    width: 350px;
+    text-align: center ;
+    margin: auto;
+}
+
+.bubble-dotted{
+    border: 1px dotted rgb(255, 255, 255);
+    width: 350px;
+    text-align:center;
+    margin: auto;
+   
+  }
+
+  @media screen and (min-width: 1700px){
+    .container-slider{
+        height: 90vh;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .big-container .line-container{
+        width: 1200px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 1350px){
+
+    /* .eng-bubble{
+        width: 405px;
+        height: 405px;
+    }
+
+    .eng-bubble-text h1{
+        font-size: 60px;
+       
+    }
+    
+    .eng-bubble-text p{
+        font-size: 17px;
+       
+    } */
+    
+    /* .first-line, 
+    .second-line{
+        width: 300px;
+       
+    }
+    
+    .bubble-dotted{
+       width: 300px;
+      } */
+  }
+    
+  
+  @media screen and (max-width: 1110px)
+
+  
+{
+
+    .big-container{
+        flex-direction: column;
+        align-content: flex-end;
+        margin: 0;
+   
+
+        
+    
+    }
+
+    .container-slider{
+        max-width: 80%;
+        margin:  50px 7em 0 ;
+        height: 85vh;
+       
+
+        
+    }
+
+    /* .eng-bubble-box{
+        position: relative;
+        transform: none;
+
+    } */
+
+    .eng-bubble {
+        left: inherit;
+        /* width: 25em; */
+        position: relative;
+        /*zmena tuto */
+        /* left: 50%;*/
+    /* top: 100%; 
+    display: flex;
+    position:relative; */
+    
+
+        
+        
+       
+    }
+
+  
+}    
+
+@media all and (max-width: 768px){
+
+    .container-slider{
+        max-width: 80%;
+        height: 90vh;
+    }
+
+    
+
+@media  all and (max-width: 500px) {
+
+    .big-container{
+        margin-top: 2rem;
+        
+    }
+    .container-slider{
+        margin: 0 auto;
+        height: 25vh;
+      
+    }
+
+    .eng-bubble{
+        width: 290px;
+        height: 290px;
+    }
+    .eng-bubble-text{
+        color:white;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        text-align: center;
+        padding: 25% 0;
+       
+    
+    
+    }
+    .eng-bubble-text h1{
+        font-size: 35px;
+        line-height: 1.1em;
+    }
+    
+    .eng-bubble-text p{
+        font-size: 14px;
+        line-height: 1.3em;
+       
+    }
+
+    .first-line, 
+.second-line{
+    width: 210px;
+    text-align: center ;
+    margin: auto;
+}
+
+.bubble-dotted{
+    border: 1px dotted rgb(255, 255, 255);
+    width: 240px;
+    text-align:center;
+    margin: auto;
+  }
+  
+  
+}  
+    
+    
+  
+}
+
+
+@media all and (max-width: 380px){
+    .container-slider{
+      height: 30vh;
+      
+    }
+
+   
+    
+  }
+
+  @media screen and (max-width: 280px) {
+    .eng-bubble{
+        width: 250px;
+        height: 250px;
+    }
+
+    .eng-bubble-text h1{
+        font-size: 25px
+    }
+
+    .eng-bubble-text p{
+        font-size: 15px;
+    }
+  }
+  
+
