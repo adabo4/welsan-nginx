@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'build')));
 
 // Handle API routes
-app.use('/subscribe', require('./subscribe-route')); // Handle subscription logic
+app.use('/api/subscribe', require('./subscribe-route')); // Handle subscription logic
 app.use('/api/forma', require('./forma-route')); // Handle /api/forma logic
 
 // For any other route, serve the React app

@@ -63,7 +63,7 @@ const Subscribe = () => {
 
 
     try {
-      const response = await axiosInstance.post('/subscribe', {
+      const response = await axiosInstance.post('/api/subscribe', {
         email,
       });
   
