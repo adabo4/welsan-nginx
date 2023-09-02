@@ -24,6 +24,9 @@ export default function RefactoredForm() {
     message: '',
   });
 
+
+  const axiosInstance = axios.create({ baseURl: process.env.REACT_APP_API_URL});
+
   const handleName = (e) => {
     setFormData({
       ...formData,
@@ -76,7 +79,7 @@ export default function RefactoredForm() {
     {
 
 
-      axios
+      axiosInstance
         .post('/api/forma', formData)
         .then((res) => {
 

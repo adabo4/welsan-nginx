@@ -1,11 +1,13 @@
 // src/Subscribe.js
 import React, { useState } from 'react';
+import axios from "axios";
 
 
 const Subscribe = () => {
   const [email, setEmail] = useState('');
   const [sent, setSent] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const axiosInstance = axios.create({ baseURl: process.env.REACT_APP_API_URL});
 
 
   const handleInputChange = (event) => {
@@ -50,24 +52,28 @@ const Subscribe = () => {
 
     // };
 
+    // try {
+    //     const response = await fetch('/subscribe', {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //       },
+    //       body: JSON.stringify({ email }),
+    //     });
+
+
     try {
-        const response = await fetch('/subscribe', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ email }),
-        });
+      const response = await axiosInstance.post('/subscribe', {
+        email,
+      });
   
-        if (response.ok) {
-          setSent(true);
-          resetForm();
-        }     
-        else  {
-          const data = await response.json();
-          alert(data.error || 'Failed to subscribe. Please try again later.');
-    
-        } 
+      if (response.status === 200) {
+        setSent(true);
+        resetForm();
+      } else {
+        const data = response.data;
+        alert(data.error || 'Failed to subscribe. Please try again later.');
+      }
       } catch (error) {
         console.error('Error:', error);
         setErrorMessage("Nepodarilo sa prihlásiť na odber noviniek.");
