@@ -36,7 +36,7 @@
    .kurzy-headline .small-circle{
      background-color: rgba(112,175,24, 1);
      position: absolute;
-     left: 36%;
+     left: 35%;
      z-index: -1;
      width: 100px;
      height: 100px;
@@ -68,7 +68,7 @@
    .kurzy-headline .butterfly-img{
      left:0;
      position: absolute;
-     width: 8rem;
+     width: 18rem;
     
    }
    

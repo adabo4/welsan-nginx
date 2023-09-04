@@ -235,6 +235,11 @@ margin: 0 auto;
     margin: .5rem;
     border-bottom: 1px solid rgba(0,0,0,0.5) ;   
 }
+
+.text-and-line:last-of-type{
+    border-bottom: none;
+
+}
 .text-and-line p{
     margin: 1rem 0;
     font-size: 14px;

@@ -313,6 +313,8 @@
     color:#DD3782;
 }
 
+/* BREAKPOINTS */
+
 @media screen and (min-width: 1700px) {
     .kde-sme-bubble-text h2{
         font-size: 60px;
@@ -405,15 +407,23 @@
     top: 35px;
     font-size: 40px;
 }
+
+
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     .small-circle-kde{
+        left: 20%;
+        
         
     }
     
     .ponuka-headline h2{
         font-size: 52px;
+    }
+
+    .green-kde {
+        left: 16%;
     }
 }
 
@@ -501,11 +511,47 @@
     }
 
     .small-circle-kde{
-        transform: translate(42px, -15px);
+        left: 23%;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+
+
+    }
+
+    .green-kde {
+        left: 20%;
     }
 
    
     
     
 }   
+
+@media screen and (max-width: 480px){
+    .small-circle-kde {
+        left: 18%;
+    }
+
+    .green-kde {
+        left: 13%;
+    }
+}
+@media screen and (max-width: 415px){
+    .small-circle-kde {
+        left: 12%;
+    }
+    .green-kde {
+        left: 8%;
+    }
+}
+@media screen and (max-width: 320px){
+    .small-circle-kde {
+        left: 25%;
+        top: -8%;
+    }
+    .green-kde {
+        left: 30%;
+    }
+}
 
