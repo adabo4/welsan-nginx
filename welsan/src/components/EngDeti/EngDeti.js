@@ -10,6 +10,7 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import Form from "../Form";
 import RefactoredForm from "../RefactoredForm";
+import MobileNavbar from "../Navbar/MobileNavbar";
 
 export default function EngDeti() {
 
@@ -18,7 +19,8 @@ export default function EngDeti() {
         <>
 
             <section className="english-children">
-                <Navbar />
+                {/* <Navbar /> */}
+                <MobileNavbar /> 
                 <div className="eng-children-container">
 
 
@@ -115,7 +117,7 @@ export default function EngDeti() {
                         </div>
 
                         <div className="card-text">
-                            <p><span>Výhody:</span> Výhody: istota, že i doučovanie prebieha pod odborným lingvistickým dohľadom v priestoroch jazykovej učebne, nemusíte tak chodiť domov k laikom z inzerátov alebo pustiť do bytu cudzieho človeka . Som maximálne flexibilná a mojím cieľom je vyjsť Vám časovo v ústrety, preto som vedela pomôcť i deťom deň pred písomkou, čo však nie je ideálne - je to stresujúca situácie pre deti, rodičov i lektorku. </p>
+                            <p><span>Výhody:</span> istota, že i doučovanie prebieha pod odborným lingvistickým dohľadom v priestoroch jazykovej učebne, nemusíte tak chodiť domov k laikom z inzerátov alebo pustiť do bytu cudzieho človeka . Som maximálne flexibilná a mojím cieľom je vyjsť Vám časovo v ústrety, preto som vedela pomôcť i deťom deň pred písomkou, čo však nie je ideálne - je to stresujúca situácie pre deti, rodičov i lektorku. </p>
                             <br />
                             <p><em>Upozornenie: </em> I keď lektorka aj Vaše dieťa budú robiť všetko, čo je v ich silách, pri dlhodobo zanedbávanej príprave na hodiny či zhoršenom prospechu sa nedajú očakávať zázraky. Vyvinieme spolu maximálne úsilie, aby sme si známku vylepšili/opravili, avšak s odporúčaním, aby sa dieťa jazyku venovalo v našom detskom kurze aspoň 10 hodín. Vyhnete sa tým zbytočnému stresu a opravovaniu známok. </p>
                         </div>

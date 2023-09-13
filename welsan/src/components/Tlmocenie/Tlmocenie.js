@@ -2,6 +2,7 @@ import Navbar from "../Navbar/Navbar";
 import Lines from "../Lines/Lines";
 import Footer from "../Footer/Footer";
 import "./tlmocenie.css"
+import MobileNavbar from "../Navbar/MobileNavbar";
 
 export default function Tlmocenie() {
     return (
@@ -10,7 +11,8 @@ export default function Tlmocenie() {
        
 
             <div className="tlmocenie-container">
-                <Navbar />
+                {/* <Navbar /> */}
+                <MobileNavbar />
                
 
                 <div className="tlmocenie-container-druhy">

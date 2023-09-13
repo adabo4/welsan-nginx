@@ -3,6 +3,7 @@ import "./firemnekurzy.css"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
 import Slickslide from "../Slickslide/Slickslide"
+import MobileNavbar from "../Navbar/MobileNavbar"
 
 export default function FiremneKurzy() {
 
@@ -11,7 +12,8 @@ export default function FiremneKurzy() {
         <>
 
             <div className="firemne-kurzy">
-                <Navbar />
+                {/* <Navbar /> */}
+                <MobileNavbar />
                 <div className="firemne-kurzy-container">
 
                     <div className="headline-box">

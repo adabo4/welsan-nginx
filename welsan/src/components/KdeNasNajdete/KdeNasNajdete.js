@@ -4,6 +4,7 @@ import "./kdenasnajdete.css"
 import Footer from "../Footer/Footer";
 import { SlArrowDown } from "react-icons/sl";
 import { HashLink } from "react-router-hash-link";
+import MobileNavbar from "../Navbar/MobileNavbar";
 
 
 export default function KdeNasNajdete() {
@@ -34,7 +35,8 @@ export default function KdeNasNajdete() {
     return (
         <>
             <div className="kde-nas-najdete" id="kde-nas-najdete">
-                <Navbar />
+                {/* <Navbar /> */}
+                <MobileNavbar />
                 <div className="najdete-nas-container">
 
                     <div className="headline-box">

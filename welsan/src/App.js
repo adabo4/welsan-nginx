@@ -22,6 +22,8 @@ import Ponuka from './components/Ponuka';
 import './components/ponuka.css'
 import './components/PonukaKurzov'
 import PonukaKurzov from './components/PonukaKurzov';
+import MobileNavbar from './components/Navbar/MobileNavbar';
+import ImageHighlight from './components/Navbar/ImageHighlight';
 
 
 function App() {
@@ -31,8 +33,10 @@ function App() {
     <div className="App">
 
 
-      <Navbar />
-
+      {/* <Navbar /> */}
+    
+      <MobileNavbar />
+     
 
       <Slider2></Slider2>
       {/* <Lines ></Lines> */}

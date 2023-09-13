@@ -2,12 +2,14 @@ import Lines from "../Lines/Lines";
 import Navbar from "../Navbar/Navbar";
 import "./dielna.css";
 import Footer from "../Footer/Footer"
+import MobileNavbar from "../Navbar/MobileNavbar";
 
 export default function Dielna() {
     return (
         <>
             <section className="english-dielna">
-                <Navbar />
+                {/* <Navbar /> */}
+                <MobileNavbar /> 
                 <div className="tvoriva-dielna-container">
 
 

@@ -16,7 +16,7 @@ function NewNavbar(){
 
     const onMouseEnter = () => {
         if(window.innerWidth < 960 ) {
-            setDropdown(false)
+            setDropdown(false) /*bolo false */
         } else {
             setDropdown(true)
         }

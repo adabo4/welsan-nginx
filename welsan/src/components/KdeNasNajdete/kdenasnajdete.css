@@ -170,6 +170,7 @@
 
 .headline-box .ponuka-headline{
     position: relative;
+    
 }
 
 .small-circle-kde{
@@ -369,14 +370,14 @@
 }
 
 .kde-sme-bubble .first-line {
-    width: 250px;
+    width: 230px;
     margin: 0 auto;
 
 
 }
 
 .kde-sme-bubble .second-line {
-   width: 250px;
+   width: 230px;
    margin: 5px auto;
 
 }
@@ -387,7 +388,7 @@
 }
 
 .kde-sme-bubble-text h2{
-    font-size: 35px;
+    font-size: 30px;
     margin: 0 auto;
     
 }
@@ -412,6 +413,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .kde-sme-bubble-text h2 {
+        font-size: 30px;
+    }
     .small-circle-kde{
         left: 20%;
         
@@ -424,6 +429,24 @@
 
     .green-kde {
         left: 16%;
+    }
+
+    .kde-sme-bubble .first-line {
+        width: 210px;
+        margin: 0 auto;
+    
+    
+    }
+    
+    .kde-sme-bubble .second-line {
+       width: 210px;
+       margin: 5px auto;
+    
+    }
+    .kde-sme-bubble .bubble-dotted{
+        width: 230px;
+        margin: 2px 0;
+        
     }
 }
 

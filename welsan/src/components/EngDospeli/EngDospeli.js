@@ -12,6 +12,7 @@ import KurzCard from "../EngDeti/KurzCard";
 import kurzinfo from "../EngDeti/kurzinfo";
 import Form from "../Form";
 import RefactoredForm from "../RefactoredForm";
+import MobileNavbar from "../Navbar/MobileNavbar";
 
 export default function EngDospeli() {
 
@@ -66,7 +67,8 @@ export default function EngDospeli() {
     return (
         <>
             <section className="english-adults">
-                <Navbar />
+                {/* <Navbar /> */}
+                <MobileNavbar /> 
                 <div className="eng-adults-container">
 
 

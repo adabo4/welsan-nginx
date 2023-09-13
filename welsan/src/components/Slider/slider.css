@@ -3,7 +3,6 @@
     position: relative;
     margin: 0;
     width: 100%;
-  
     align-items: center; /*bolo flex-end*/
     /* */
     flex-direction: column-reverse;
@@ -111,7 +110,7 @@
     background-color: black;
     /* left: 50%;
     top: 10%; */
-    left: 45%;
+    left: 50%;
     top: 10%;
     display: flex;
     flex-direction: column;
@@ -198,7 +197,18 @@
     .bubble-dotted{
        width: 300px;
       } */
+
+      .eng-bubble{
+        left: 42%;
+      }
+      .container-slider {
+        max-width: 80%;
+      }
+      .big-container .line-container{
+        width: 80%;
+    }
   }
+
 
 
  

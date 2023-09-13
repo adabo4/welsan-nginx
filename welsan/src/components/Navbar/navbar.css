@@ -6,6 +6,8 @@ header{
     justify-content: center;
     height: 80px;
     padding: 0 2rem;
+    position: relative;
+
   
     
   }
@@ -126,6 +128,14 @@ header{
     display: none;
   }
 
+  .dropdown-span {
+     display: none;
+    }
+
+    ul.ul-list {
+      position: relative;
+    }
+
   
   @media screen and (min-width: 1700px) {
     
@@ -201,6 +211,23 @@ header{
       transition: 0.3s ease-in-out; */
      
     }
+
+    .mobile-nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-height: 100vh;
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: black;
+      transition: 1s;
+      transform: translateY(-180vh);
+      z-index: 20;
+
+    }
       
   
     ul {
@@ -216,8 +243,11 @@ header{
     font-size: 1em;  
     border-bottom: 1px dotted white;
     padding-bottom: 1em;
+
     
   }
+
+  
 
   nav li:last-of-type{
     border-bottom: none;
@@ -256,6 +286,21 @@ header{
       right:0;
       color: white;
     }
+
+    .dropdown-span {
+      display: flex;
+      color: white;
+      font-size: 25px;
+      padding:  0;
+      margin: 0;
+      justify-content: center;
+     
+     
+
+    }
+
+  
+   
   
   
   }

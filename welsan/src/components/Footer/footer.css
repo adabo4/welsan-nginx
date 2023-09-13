@@ -110,13 +110,15 @@ FOOTER
 
   .subscribe-form .msg{
     width: 230px;
-      
     border-radius: 5px;
     margin-top: 15px  ;
+    display: none;
   }
 
-  .subscribe-form .msgAppear{
-height: 70px;
+  .subscribe-form .msg.msgAppear{
+   height: 70px;
+   display: block;
+
   }
 
   .subscribe-form .error-msg{
@@ -193,6 +195,11 @@ height: 70px;
     .subscribe-form .msgAppear{
       height: 70px;
     }
+
+    .footer-box:nth-child(4){
+      margin-top: 18px;
+    }
+ 
   }
   
   

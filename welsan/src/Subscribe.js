@@ -7,6 +7,7 @@ const Subscribe = () => {
   const [email, setEmail] = useState('');
   const [sent, setSent] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [message, setMessage] = useState('');
   const axiosInstance = axios.create({ baseURl: process.env.REACT_APP_API_URL});
 
 
@@ -14,87 +15,57 @@ const Subscribe = () => {
     setEmail(event.target.value);
   };
 
-  const handleSubmit = async ( event) => {
-    event.preventDefault();
-
-    // TODO: Add form validation here if needed
-
-    // const subscribe = async ({email}) => {
-    //     const response = await fetch(`/api/subscribe`);
-    // }}
-    
-    // try {
-    //     const FORM_ID = "5466080";
-    //     const API_KEY = "XMuxTFQ8FFYE-4zTF1EEQw";
-    //     const API_URL = "https://api.convertkit.com/v3/forms/5466080/subscribe";
-
-    //     const data ={
-    //         email,
-    //         api_key: API_KEY
-    //     };
-
-    //     const response = await fetch(`${API_URL}`, {
-    //       body: JSON.stringify(data),
-    //       headers: { "Content-Type": "application/json"},
-    //       method: "POST"
-    //     });
-
-    //     if (response.status >= 400){
-    //         return response.status(400).json("There was an error")
-    //     }
-
-    //     return response.status(200).json({error: ''})
-
-    // }catch(error){
-
-    //     console.error('Error:', error);
-    //     alert('An error occurred. Please try again later.');
-
-    // };
-
-    // try {
-    //     const response = await fetch('/subscribe', {
-    //       method: 'POST',
-    //       headers: {
-    //         'Content-Type': 'application/json',
-    //       },
-    //       body: JSON.stringify({ email }),
-    //     });
-
-
-    try {
-      const response = await axiosInstance.post('/api/subscribe', {
-        email,
-      });
-  
-      if (response.status === 200) {
-        setSent(true);
-        resetForm();
-      } else {
-        const data = response.data;
-        alert(data.error || 'Failed to subscribe. Please try again later.');
-      }
-      } catch (error) {
-        console.error('Error:', error);
-        setErrorMessage("Nepodarilo sa prihlásiť na odber noviniek.");
-         resetForm(); 
+    const handleSubmit = async ( event) => {
+      event.preventDefault();   
       
-        
-        
-      } 
-
-
+      try {
+        const response = await axiosInstance.post('/api/subscribe', {
+          email,
+        });
     
-    }
+    
+        if (response.status === 200) {
+          
+          console.log("Reponse status is: " + response.status);
+          console.log("Data " + response.data.message);
+      
+          setSent(true);
+          resetForm();
+          setErrorMessage('');
+          // Display the subscription message from the server
+          setMessage(response.data.message);
 
-    const resetForm = () => {
-      setEmail('');
+          
+      
+        } else{
+          const data = response.data;
+          alert(data.error || 'Failed to subscribe. Please try again later.');
+          console.log("This is error from Subscribe.js" + data.error);
+          setMessage(''); // Clear any previous message
+          setErrorMessage(data.error || response.data.message);
+        }
+        } catch (error) {
+          console.log('Error:', error);
+          setErrorMessage("Nepodarilo sa prihlásiť na odber noviniek.");
+          resetForm(); 
+          setMessage(''); // Clear any previous message
+        
+          
+          
+        } 
 
-      setTimeout(() => {
-        setSent(false);
-        setErrorMessage('');
-      }, 3000);
-    };
+
+      
+      }
+
+      const resetForm = () => {
+        setEmail('');
+
+        setTimeout(() => {
+          setSent(false);
+          setErrorMessage('');
+        }, 3000);
+      };
     
     
 
@@ -114,9 +85,23 @@ const Subscribe = () => {
         />
 
 
-<div className={sent ? 'msg msgAppear' : errorMessage ? 'error-msg' : 'msg'}>
+{/* <div className={sent ? 'msg msgAppear' : errorMessage ? 'error-msg' : 'msg'}>
               {sent ? 'Prihlásenie na odber bolo úspešné. Skontroluj si prosím mail.' : errorMessage || null}
-            </div>
+              
+            </div> */}
+            {message && (
+        <div className={sent ? 'msg msgAppear' : errorMessage ? 'error-msg' : 'msg'}>
+          {message}
+        </div>
+
+      )}
+
+      {/* Display the error message */}
+      {errorMessage && (
+        <div className="error-msg">
+          {errorMessage}
+        </div>
+      )}
         <button className='btn-subscribe' type="submit">Subscribe</button>
         
       </form>
