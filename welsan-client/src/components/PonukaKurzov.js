@@ -11,7 +11,6 @@ function PonukaKurzov() {
             <Ponuka />
             <Kurzy></Kurzy>
             <Footer></Footer>
-
         </div>
     )
 }

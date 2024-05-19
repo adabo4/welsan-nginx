@@ -14,12 +14,7 @@ export default function EmailJSForm() {
     const [sent, setSent] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
-    const [inputFocus, setInputFocus] = useState({
-        name: false,
-        email: false,
-        number: false,
-        message: false,
-    });
+
 
     const [errors, setErrors] = useState({
         name: '',
@@ -58,19 +53,6 @@ export default function EmailJSForm() {
 
     };
 
-    const handleInputBlur = (fieldName) => {
-        setInputFocus({
-            ...inputFocus,
-            [fieldName]: false,
-        });
-    };
-
-    const handleInputFocus = (fieldName) => {
-        setInputFocus({
-            ...inputFocus,
-            [fieldName]: true,
-        });
-    };
 
     const isValidEmail = (email) => {
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
