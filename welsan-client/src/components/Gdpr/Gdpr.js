@@ -46,9 +46,6 @@ export default function Gdpr() {
                                 </li>
                             </ul>
 
-
-
-
                         </li>
                         <li>
                             Osobnými údajmi sa rozumejú všetky informácie o identifikovanej alebo identifikovateľnej fyzickej osobe; identifikovateľnou fyzickou osobou je fyzická osoba, ktorú možno priamo alebo nepriamo identifikovať, najmä odkazom na určitý identifikátor, napríklad meno, identifikačné číslo, lokačné údaje, sieťový identifikátor alebo na jeden alebo viac zvláštnych prvkov fyzické, fyziologické, genetické, psychické, ekonomické, kultúrne alebo spoločenské identity tejto fyzickej osoby.
@@ -58,9 +55,6 @@ export default function Gdpr() {
                         </li>
                     </ol>
                 </div>
-
-
-
 
                 <Title title="II. Zdroje a kategórie spracovávaných osobných údajov" />
 
@@ -75,9 +69,6 @@ export default function Gdpr() {
                         </li>
                     </ol>
                 </div>
-
-
-
                 <Title title="III. Zákonný dôvod a účel spracovania osobných údajov" />
 
                 <div className='gdpr-text'>
@@ -94,11 +85,7 @@ export default function Gdpr() {
                         </li>
                     </ol>
                 </div>
-
-
                 <Title title="IV. Doba uchovávania údajov" />
-
-
                 <div className='gdpr-text'>
                     <ol className='gdpr-list'>
                         <li>
@@ -167,14 +154,10 @@ export default function Gdpr() {
                             Správca je oprávnený tieto podmienky zmeniť. Novú verziu podmienok ochrany osobných údajov zverejní na svojich internetových stránkach a zároveň Vám zašle novú verziu týchto podmienok Vašu e-mailovú adresu, ktorú ste správcovi poskytol/a.
                         </li>
                     </ol>
-             
+
                 </div>
-
-              
-
             </div>
             <Footer />
-
         </>
     )
 }
