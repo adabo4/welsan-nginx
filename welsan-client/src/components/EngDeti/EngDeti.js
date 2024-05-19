@@ -5,17 +5,11 @@ import EmailJSForm from "../EmailJSForm";
 import MobileNavbar from "../Navbar/MobileNavbar";
 
 export default function EngDeti() {
-
-
     return (
         <>
-
             <section className="english-children">
-                {/* <Navbar /> */}
                 <MobileNavbar />
                 <div className="eng-children-container">
-
-
                     <div className="headline-box">
                         <div className='ponuka-headline'>
                             Angličtina deti
@@ -24,21 +18,6 @@ export default function EngDeti() {
                     </div>
 
                     <h2 className="detailed-title">Detailný popis kurzov</h2>
-
-                    {/* {detidata.map((item, i) => {
-                                return <Students title={item.title} desc={item.desc} price={item.price} color={item.color} box1={item.box1}
-                                box2={item.box2}
-                                box3={item.box3}
-                                box4={item.box4} />
-                                
-                            })} */}
-
-
-
-
-
-
-
 
                     <div id="rozpravkovo">
                         <div className="card-cont">
@@ -181,19 +160,10 @@ export default function EngDeti() {
                         </div>
                     </div>
 
-
                     <h2 className="detailed-title">Máte otázku? Pýtajte sa:</h2>
-
-
-                    {/* <Input /> */}
-                    {/* <Form /> */}
                     <EmailJSForm />
-
-
                 </div>
-
                 <Footer />
-
             </section>
         </>
     )
