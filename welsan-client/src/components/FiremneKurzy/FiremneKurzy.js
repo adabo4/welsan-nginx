@@ -1,6 +1,5 @@
 import Lines from "../Lines/Lines"
 import "./firemnekurzy.css"
-import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
 import Slickslide from "../Slickslide/Slickslide"
 import MobileNavbar from "../Navbar/MobileNavbar"
