@@ -17,7 +17,7 @@
 
 }
 
-.right{
+.right {
     justify-content: flex-end;
 }
 
@@ -79,9 +79,7 @@
 }
 
 .accordion-container {
-
     position: relative;
-
 }
 
 

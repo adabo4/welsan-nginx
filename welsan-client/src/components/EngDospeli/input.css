@@ -1,43 +1,43 @@
-*[name="message"]{
+*[name="message"] {
     background-color: black;
     color: white;
     font-family: var(--p-font);
     display: block;
     margin: 10px auto;
-    
+
 }
 
-*[name="message"]:hover{
+*[name="message"]:hover {
     background-color: var(--pinkcolor);
 }
 
-form input{
+form input {
     width: 350px;
     height: 30px;
 }
 
-textarea{
+textarea {
     width: 350px;
     padding: 5px;
 }
 
-.input-container{
+.input-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    
-    
+
+
 }
 
-#questions{
+#questions {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.submit-btn{
+.submit-btn {
     background-color: var(--pinkcolor);
     width: 125px;
     height: 30px;
@@ -45,17 +45,9 @@ textarea{
     color: white;
     font-size: 17px;
     align-self: flex-end;
-    /* margin-left: 220px; */
-    
-
-   
-    
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
     background-color: black;
     color: var(--pinkcolor);
 }
-
-
-

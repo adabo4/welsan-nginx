@@ -1,5 +1,3 @@
-
-
 /*
  * Ensures that the provided pattern is either a string or RegExp
  * @param {string|RegExp} pattern - a regular expression pattern
@@ -51,7 +49,5 @@ const FormattedShortStory = ({ className, pattern, text }) => (
     )}
   </p>
 );
-
-
 
 export default FormattedShortStory;
