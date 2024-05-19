@@ -1,5 +1,5 @@
 import './App.css';
-import Slider from './components/Slider/Slider';
+import Slider from './components/Slider/Slider.js';
 import About from './components/About/About';
 import Kurzy from './components/Kurzy/Kurzy';
 import Footer from './components/Footer/Footer';
