@@ -1,50 +1,35 @@
-
 /*Lines */
 
-.visible{
-    display: none;
-  }
-  
-  .line-container{
+.visible {
+  display: none;
+}
+
+.line-container {
   width: 100%;
   max-width: 100%;
-   display: flex;
-   flex-direction: column;
-   z-index: -1;
-  
-  
-   /* margin: 5px 350px 0; */
-   
-  
-   
-   
-   
-   
-   
-    
-  }
-  .line {
-    justify-content: center;
-    display: flex;
-    border: none;
-    border-top: 3px solid black;
-    color: black;
-    width: 100%;
-    margin: 5px auto 0;
-  
-  
-   
-    
-  } 
-  
-   .thin{
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+}
+
+.line {
+  justify-content: center;
+  display: flex;
+  border: none;
+  border-top: 3px solid black;
+  color: black;
+  width: 100%;
+  margin: 5px auto 0;
+}
+
+.thin {
   border: 1px solid black;
   margin: 5px auto 0;
   width: 100%;
-  }
-  
-  .line-dotted{
-    border: 1px dotted black;
-    margin: 5px auto 0;
-    width: 100%;
-  }
+}
+
+.line-dotted {
+  border: 1px dotted black;
+  margin: 5px auto 0;
+  width: 100%;
+}
