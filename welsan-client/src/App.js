@@ -1,5 +1,5 @@
 import './App.css';
-import Slider2 from './components/Slider/Slider2';
+import Slider from './components/Slider/Slider';
 import About from './components/About/About';
 import Kurzy from './components/Kurzy/Kurzy';
 import Footer from './components/Footer/Footer';
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <MobileNavbar />
-      <Slider2></Slider2>
+      <Slider></Slider>
       <Bubbles2></Bubbles2>
       <About></About>
       <div className="kurzy-container">
