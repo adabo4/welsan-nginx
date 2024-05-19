@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import './form2.css';
+import './emailjsform.css';
 
 export default function EmailJSForm() {
 
@@ -73,7 +73,6 @@ export default function EmailJSForm() {
     };
 
     const isValidEmail = (email) => {
-        // Regular expression for basic email validation
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailPattern.test(email);
     };
@@ -185,7 +184,7 @@ export default function EmailJSForm() {
                             onChange={handleEmail}
                             name="message"
                             onBlur={() => {
-                                if (!formData.email.includes(("@" && "."))) {
+                                if (isValidEmail(formData.email) === false) {
                                     setErrors({
                                         ...errors,
                                         email: '* Prosím zadajte platný formát mailu.',
