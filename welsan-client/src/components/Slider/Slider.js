@@ -5,7 +5,7 @@ import { useEffect, useState, useRef, useCallback } from 'react';
 import MediaQuery from "../MediaQueryLines/MediaQuery";
 import MediaQueryLines2 from "../MediaQueryLines/MediaQueryLines2";
 
-function Slider2() {
+function Slider() {
     const timerRef = useRef(null);
 
     const [slideIndex, setSlideIndex] = useState(1);
@@ -81,4 +81,4 @@ function Slider2() {
     )
 }
 
-export default Slider2;
+export default Slider;
