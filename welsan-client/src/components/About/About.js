@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
-import Lines from "../Lines/Lines";
 import london from './london copy.png';
 import './about.css';
 import { HashLink } from "react-router-hash-link";
 
 
-function About(props) {
+function About() {
 
     return (
         <>
@@ -50,7 +48,7 @@ function About(props) {
                         <hr className="thin" />
                         <hr className="line-dotted" />
                         <div className="small-circle"></div>
-                        {/* <div>tuto bol div style inline-block</div> */}
+
                         <h3>O mne</h3>
                         <hr className="line-dotted" />
                         <hr className="thin" />
@@ -86,7 +84,7 @@ function About(props) {
 
                         <HashLink to="/o-kurzoch#ponuka" scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}><button className="btn-info">Viac info...</button></HashLink>
 
-                        <img src={london} className="london-img"></img>
+                        <img src={london} className="london-img" alt="London"></img>
 
 
                     </div>
