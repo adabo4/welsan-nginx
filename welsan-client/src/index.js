@@ -5,16 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-  Switch,
+  RouterProvider
 } from "react-router-dom";
 import PonukaKurzov from './components/PonukaKurzov';
 import FiremneKurzy from './components/FiremneKurzy/FiremneKurzy';
 import KdeNasNajdete from './components/KdeNasNajdete/KdeNasNajdete';
 import Tlmocenie from './components/Tlmocenie/Tlmocenie';
-import Blog from './components/Slider3/Blog';
 import EngDospeli from './components/EngDospeli/EngDospeli';
 import Dielna from './components/Dielna/Dielna'
 import EngDeti from './components/EngDeti/EngDeti'
@@ -45,10 +41,6 @@ const router = createBrowserRouter([
     element: <Tlmocenie></Tlmocenie>
   },
   {
-    path: "/blog",
-    element: <Blog />
-  },
-  {
     path: "/ang-dospeli",
     element: <EngDospeli />
   },
@@ -64,7 +56,7 @@ const router = createBrowserRouter([
     path: "/gdpr",
     element: <Gdpr />
   }
-  
+
 ]);
 
 

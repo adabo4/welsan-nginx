@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar";
 import Lines from "../Lines/Lines";
 import Footer from "../Footer/Footer";
 import "./tlmocenie.css"
@@ -7,13 +6,9 @@ import MobileNavbar from "../Navbar/MobileNavbar";
 export default function Tlmocenie() {
     return (
         <>
-
-       
-
             <div className="tlmocenie-container">
-                {/* <Navbar /> */}
                 <MobileNavbar />
-               
+
 
                 <div className="tlmocenie-container-druhy">
                     <div className="headline-box">
@@ -25,7 +20,7 @@ export default function Tlmocenie() {
 
                     <div className="tlmocenie-content">
                         <div className="tlmocenie-left">
-                            
+
                             <h2>Profesionálne preklady</h2>
                             <div className="small-circle-tlmocenie"></div>
                             <h2>Expresné vyhotovenie</h2>
@@ -53,7 +48,7 @@ export default function Tlmocenie() {
                             </div>
                         </div>
                     </div>
-                </div> 
+                </div>
 
                 <Footer />
             </div>

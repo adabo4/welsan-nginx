@@ -24,23 +24,23 @@ function Navbar() {
     const [dropdown, setDropdown] = useState(false);
 
     const onMouseEnter = () => {
-       setDropdown(true);
+        setDropdown(true);
 
     }
     const onMouseLeave = () => {
-       setDropdown(false);
+        setDropdown(false);
 
     }
 
     let ActiveLink = 'home';
     let InActiveLink = 'home-white';
 
-   
-
-    
 
 
-   
+
+
+
+
 
     return (
         <>
@@ -59,21 +59,21 @@ function Navbar() {
 
                     {/* tuto ide burger2 */}
                     <ul>
-                        <li ><NavLink to="/" className={({isActive}) => isActive ? ActiveLink : InActiveLink}  style={style}>Domov</NavLink></li>
+                        <li ><NavLink to="/" className={({ isActive }) => isActive ? ActiveLink : InActiveLink} style={style}>Domov</NavLink></li>
                         <hr />
                         <li onMouseEnter={onMouseEnter}
                             onMouseLeave={onMouseLeave}
-                            >
-                                <NavLink to="/o-kurzoch" className={({isActive}) => isActive ? ActiveLink : InActiveLink} style={style}>O Kurzoch</NavLink>
-                                {dropdown && <Dropdown />}                       
+                        >
+                            <NavLink to="/o-kurzoch" className={({ isActive }) => isActive ? ActiveLink : InActiveLink} style={style}>O Kurzoch</NavLink>
+                            {dropdown && <Dropdown />}
 
                         </li>
                         <hr />
-                        <li><NavLink to="/firemne-kurzy" className={({isActive}) => isActive ? ActiveLink : InActiveLink}  style={style}>Firemné kurzy</NavLink></li>
+                        <li><NavLink to="/firemne-kurzy" className={({ isActive }) => isActive ? ActiveLink : InActiveLink} style={style}>Firemné kurzy</NavLink></li>
                         <hr />
-                        <li><NavLink to="/kde-nas-najdete" className={({isActive}) => isActive ? ActiveLink : InActiveLink} style={style}>Kde nás nájdete</NavLink></li>
+                        <li><NavLink to="/kde-nas-najdete" className={({ isActive }) => isActive ? ActiveLink : InActiveLink} style={style}>Kde nás nájdete</NavLink></li>
                         <hr />
-                        <li><NavLink to="/tlmocenie-a-preklady" className={({isActive}) => isActive ? ActiveLink : InActiveLink} style={style}>Tlmočenie a preklady</NavLink></li>
+                        <li><NavLink to="/tlmocenie-a-preklady" className={({ isActive }) => isActive ? ActiveLink : InActiveLink} style={style}>Tlmočenie a preklady</NavLink></li>
                         <hr />
                         {/* <li><NavLink to="/blog" className={({isActive}) => isActive ? ActiveLink : InActiveLink} style={style}>Blog</NavLink></li> */}
                         {/* <hr /> */}
