@@ -3,8 +3,6 @@ import butterfly from '../Kurzy/butterfly.webp';
 import flower from "../Kurzy/flower.webp";
 import "./kurzyheadline.css"
 
-
-
 export default function KurzyHeadline() {
     return (
         <>
@@ -22,7 +20,6 @@ export default function KurzyHeadline() {
 
 
                 {/* <img src="./img/pumpkin.png" alt="flower-img" className='flower-img' /> */}
-
                 {/* <img src="./img/snowflake.png" alt="flower-img" className='snowflake-img' /> */}
 
 
