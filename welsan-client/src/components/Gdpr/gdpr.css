@@ -1,0 +1,66 @@
+
+
+.gdpr-container {
+    max-width: 1100px;
+    width: 100%;
+    margin:0 auto;
+    margin-bottom: 25px;
+    font-family: var(--h1-li-font-enriqueta);
+}
+
+.gdpr-title {
+    font-size: 35px;
+    background-color:rgba(221, 55, 130, 0.5); 
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    
+}
+
+.gdpr-container p:last-of-type{
+   font-size: 20px;
+}
+
+.gdpr-list {
+    margin: 15px;
+}
+
+.gdpr-list li{
+    line-height: 1.5em;
+
+    
+}
+
+.gdpr-list > li {
+    margin-top: 15px;
+}
+
+.gdpr-list ul {
+    margin-left: 30px;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .gdpr-container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .gdpr-container {
+        width: 80%;
+    }
+
+    .unordered-list {
+        
+        
+        display: block;
+    }
+
+    @media screen and (max-width: 500px) {
+        .gdpr-title{
+            font-size: 25px;
+        }
+       
+    }
+}

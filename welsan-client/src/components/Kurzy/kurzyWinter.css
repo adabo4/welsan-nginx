@@ -1,0 +1,535 @@
+/* Kurzy */
+
+.kurzy-container {
+  height: auto;
+  width: 1000px;
+  display: flex;
+  margin: 2rem auto;
+  position: relative;
+  flex-direction: column;
+
+
+
+}
+
+.kurzy-headline {
+
+  width: 100%;
+  height: 40%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  /*flex-end;*/
+  align-items: center;
+  margin: 2rem 0;
+
+
+
+}
+
+.level-line-p {
+  font-family: var(--p-font);
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+
+
+.kurzy-headline .small-circle {
+  background-color: rgba(112, 175, 24, 1);
+  position: absolute;
+  left: 35%;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  bottom: 25%;
+}
+
+.kurzy-headline .line {
+
+  position: absolute;
+  left: 36%;
+  /*bolo 36*/
+  bottom: 18%;
+  width: 63%;
+}
+
+.kurzy-headline .thin {
+  position: absolute;
+  left: 36%;
+  bottom: 25%;
+  width: 63%;
+
+
+}
+
+.kurzy-headline h3 {
+  font-size: 35px;
+}
+
+/* .kurzy-headline .butterfly-img {
+  left: 0;
+  position: absolute;
+  width: 15rem;
+  bottom: 0;
+
+} */
+/* .kurzy-headline .tree-img {
+  left: 0;
+  position: absolute;
+  width: 14rem;
+  bottom: 0;
+
+} */
+
+.kurzy-headline .snowman-img {
+  /* position: absolute;
+  width: 15rem;
+  left: 150px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(15deg); */
+  left: 0;
+  position: absolute;
+  width: 18rem;
+  bottom: -30px;
+
+
+}
+
+/* .kurzy-headline .flower-img {
+  width: 8rem;
+  position: relative;
+} */
+
+.kurzy-headline .snowflake-img {
+  width: 8rem;
+  position: relative;
+  left: 0;
+}
+
+@media screen and (max-width: 1110px) {
+  .kurzy-container {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .kurzy-headline {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* .kurzy-headline .tree-img {
+    position: relative;
+    margin: 1rem 0;
+    align-self: flex-start;
+    transform: translate(50px, 50px);
+
+  }
+
+  .kurzy-headline .snowman-img {
+    position: absolute;
+    width: 8rem;
+    left: 190px;
+    bottom: 320px;
+    z-index: -1;
+    transform: rotate(15deg);
+
+
+  } */
+
+  .winter-images {
+
+    width: 80%;
+    position: relative;
+    bottom: 50px;
+
+
+  }
+
+  .kurzy-headline .snowman-img {
+    position: relative;
+    left: -260px;
+
+  }
+
+  /* .kurzy-headline .flower-img {
+    position: relative;
+    width: 8rem;
+    margin: 2rem 0;
+    align-self: flex-end;
+    right: 20%;
+  } */
+
+  .kurzy-headline .snowflake-img {
+    left: 150px;
+    width: 10rem;
+    margin-top: 2rem;
+
+  }
+
+  .kurzy-headline .small-circle {
+    position: relative;
+    left: 0;
+    top: 75px;
+
+  }
+
+  .kurzy-headline .line,
+  .kurzy-headline .thin {
+    position: inherit;
+    width: 100%;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .kurzy-container {
+    margin: 0 5%;
+  }
+
+  .kurzy-headline {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .kurzy-headline .line,
+  .kurzy-headline .thin {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+
+  .kurzy-headline .snowman-img {
+    left: -200px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .kurzy-headline .small-circle {
+    left: 1%;
+  }
+
+  .kurzy-container {
+    margin: 0 5px;
+  }
+
+  .kurzy-headline .line,
+  .kurzy-headline .thin {
+    width: 95%;
+  }
+
+  .kurzy-headline h3 {
+    font-size: 30px;
+    text-align: center;
+
+  }
+
+  /* .kurzy-headline{
+      align-items: center ;
+      justify-content: center;
+     } */
+
+
+
+}
+
+@media screen and (max-width: 420px) {
+
+  .kurzy-headline .small-circle {
+    left: 10%;
+
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  .kurzy-headline .small-circle {
+    left: 5%;
+
+  }
+
+}
+
+/* Typy kurzov */
+
+
+.course-types {
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* flex-basis: 50%; */
+  /* align-items: flex-end; */
+  /* text-align: center; */
+}
+
+.courses-box {
+  width: 230px;
+  margin: 0.5em;
+  text-align: start;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1px;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+
+}
+
+.course-text-box {
+  margin: auto;
+}
+
+.type-button {
+
+  align-self: flex-end;
+  margin: auto;
+}
+
+.btn-info-2:nth-child(3) {
+  align-self: flex-end;
+}
+
+h4 {
+
+  font-size: 18px;
+
+}
+
+.courses-box p {
+  line-height: 1.5em;
+  font-size: 14px;
+
+
+}
+
+.adults-box p:first-of-type {
+  margin-top: 5px;
+}
+
+.adults-box {
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.children-box {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.kurzy-container h3 {
+  font-size: 23px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+
+
+.pink {
+  color: rgba(221, 55, 130, 1)
+}
+
+.green {
+  color: rgba(112, 175, 24, 1);
+}
+
+.kurzy-container .line-container {
+  width: 100%;
+  max-width: 99%;
+
+}
+
+.btn-info-2 {
+  background-color: #ffffff;
+  border-radius: 28px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  color: #000000;
+  font-weight: 500;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 10px 35px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  margin: 1rem;
+  text-align: center;
+
+
+
+
+
+
+
+}
+
+.btn-info-2:hover {
+  background-color: #161515;
+  transition: ease-in-out 0.3s;
+  color: white;
+}
+
+.btn-info-2:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-info-2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 1110px) {
+
+  .children-box {
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .kurzy-container h3 {
+    text-align: center;
+  }
+
+
+  .adults-box {
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .kurzy-container .line-container {
+    max-width: 85%;
+    margin: 0 auto;
+
+  }
+
+  .course-text-box .line-container,
+  .course-text-box .line,
+  .course-text-box .thin,
+  .course-text-box .line-dotted {
+    max-width: 100%;
+    margin: 2px auto;
+  }
+
+  .kurzy-container .line,
+  .kurzy-container .thin,
+  .kurzy-container .line-dotted {
+    margin: 2px auto;
+  }
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .children-box {
+    justify-content: center;
+  }
+
+  .adults-box {
+    justify-content: center;
+  }
+
+}
+
+
+@media screen and (max-width:550px) {
+
+  .adults-box {
+
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .children-box {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .courses-box {
+    margin: 0 auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .kurzy-container .line-container {
+    margin: 0 auto;
+  }
+
+  .kurzy-container h3 {
+    text-align: center;
+  }
+
+  .kurzy-headline .snowman-img {
+    left: unset;
+  }
+
+  .kurzy-headline .snowflake-img {
+    left: unset;
+  }
+
+  .kurzy-headline {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+
+  }
+
+
+
+
+
+
+}
+
+@media screen and (max-width:450px) {
+
+  /* .kurzy-headline .snowman-img {
+    bottom: 320px;
+    left: 50%;
+  }
+
+  .kurzy-headline .tree-img {
+    width: 10rem;
+    left: 25%;
+    border: 1px solid blue;
+  } */
+
+
+
+
+}
+
+@media screen and (max-width: 250px) {
+
+  .kurzy-headline .snowman-img {
+    width: 13rem;
+  }
+}
