@@ -1,17 +1,15 @@
 import './boxes.css'
 
-export default function Boxes(props){
+export default function Boxes(props) {
 
-    return(
+    return (
         <>
-        
-                <div className="box" style={{backgroundColor: props.style}}>
-                    <div className="box-text">
+            <div className="box" style={{ backgroundColor: props.style }}>
+                <div className="box-text">
                     <h3>{props.title}</h3>
                     <p>{props.text}</p>
-                    </div>
                 </div>
-            
+            </div>
         </>
     )
 }
