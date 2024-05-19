@@ -1,10 +1,9 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import speech from './bubble3.png'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
 import './navbar.css'
 import { useState } from "react";
-import Dropdown from "../Navbarwithdropdown/Dropdown";
 import '../Navbarwithdropdown/Dropdown.css';
 import DropdownMobile from "../Navbarwithdropdown/DropdownMobile";
 import { IoMdArrowDropdown } from "react-icons/io";
@@ -12,23 +11,14 @@ import { IoMdArrowDropdown } from "react-icons/io";
 function MobileNavbar() {
 
     const navRef = useRef();
-    const navigate = useNavigate();
 
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
     }
 
     const [isMobile, setIsMobile] = useState(false);
-
-
-
-
     const toggleMobileMenu = () => {
 
-        setIsMobile(!isMobile);
-    }
-
-    const closeMobileMenu = () => {
         setIsMobile(!isMobile);
     }
 
@@ -36,8 +26,6 @@ function MobileNavbar() {
         textDecoration: "none",
 
     }
-
-    const [dropdown, setDropdown] = useState(false);
 
     const onMouseEnter = () => {
         setIsMobile(!isMobile);
@@ -50,11 +38,6 @@ function MobileNavbar() {
 
     let ActiveLink = 'home';
     let InActiveLink = 'home-white';
-
-
-
-
-
     return (
         <>
             <header>
@@ -79,10 +62,6 @@ function MobileNavbar() {
                         </li>
                         <hr />
                         <li onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-
-
-
-
                             <NavLink
                                 to="/o-kurzoch"
                                 className={({ isActive }) => isActive ? ActiveLink : InActiveLink}
@@ -91,10 +70,7 @@ function MobileNavbar() {
 
                                 O Kurzoch </NavLink>
 
-
-
                             <div className="dropdown-span" onClick={toggleMobileMenu}><IoMdArrowDropdown /></div>
-
 
                             {isMobile && <DropdownMobile />}
 
@@ -106,29 +82,17 @@ function MobileNavbar() {
                         <hr />
                         <li><NavLink to="/tlmocenie-a-preklady" className={({ isActive }) => isActive ? ActiveLink : InActiveLink} style={style}>Tlmočenie a preklady</NavLink></li>
                         <hr />
-                        {/* <li><NavLink to="/blog" className={({isActive}) => isActive ? ActiveLink : InActiveLink} style={style}>Blog</NavLink></li> */}
-                        {/* <hr /> */}
                     </ul>
 
                     <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                         <FaTimes></FaTimes>
                     </button>
-
-
                 </nav>
-
                 <button className="nav-btn" onClick={showNavbar}>
                     <FaBars></FaBars>
                 </button>
-
             </header>
-
-
         </>
-
-
-
-
     )
 }
 

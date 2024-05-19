@@ -1,7 +1,7 @@
 
 import { useState } from "react"
 import "./Dropdown.css";
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { MenuItems } from "./MenuItems.js"
 
 export default function DropdownMobile() {
@@ -17,7 +17,7 @@ export default function DropdownMobile() {
                         <li key={index}>
                             <NavLink
                                 to={item.path}
-                                className={({isActive}) => isActive ? 'home dropdown-link' : 'dropdown-link' } 
+                                className={({ isActive }) => isActive ? 'home dropdown-link' : 'dropdown-link'}
                                 onClick={() => setClick(false)}
                             >
                                 {item.title}
