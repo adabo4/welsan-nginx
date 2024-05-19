@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar";
 import Lines from "../Lines/Lines";
 import "./kdenasnajdete.css"
 import Footer from "../Footer/Footer";
@@ -8,34 +7,9 @@ import MobileNavbar from "../Navbar/MobileNavbar";
 
 
 export default function KdeNasNajdete() {
-
-    const divstyle1 = {
-        maxWidth: "100%",
-        listStyle: "none",
-        transition: "none",
-        overflow: "hidden",
-        width: "500px",
-        height: "500px",
-
-
-
-    }
-
-    const embedstyle = {
-        width: "100%",
-        height: "100%",
-        maxWidth: "100%",
-    }
-
-    const iframestyle = {
-        height: "100%",
-        width: "100%",
-        border: 0,
-    }
     return (
         <>
             <div className="kde-nas-najdete" id="kde-nas-najdete">
-                {/* <Navbar /> */}
                 <MobileNavbar />
                 <div className="najdete-nas-container">
 
@@ -55,7 +29,7 @@ export default function KdeNasNajdete() {
                                     <hr className="second-line" />
                                     <h2>Začni už dnes</h2>
                                     <hr className="bubble-dotted" />
-                                    <span><HashLink to="/o-kurzoch#ponuka" smooth scroll={(el) =>el.scrollIntoView({behavior: 'smooth', block: 'start'})}><SlArrowDown></SlArrowDown></HashLink></span>
+                                    <span><HashLink to="/o-kurzoch#ponuka" smooth scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}><SlArrowDown></SlArrowDown></HashLink></span>
 
                                 </div>
                             </div>
@@ -86,8 +60,6 @@ export default function KdeNasNajdete() {
                                     </div>
                                 </div>
 
-
-
                                 <div className="reasons-left">
                                     <div className="circle-and-header-reasons">
                                         <div className="small-circle">3</div>
@@ -108,12 +80,7 @@ export default function KdeNasNajdete() {
                                         <p>Venovať sa Vám bude majiteľka jazykovky, a preto si Vy ani Vaše deti nemusia zvykať na iné štýly výučby a prístupu. Mne samej záleží na špičkovej kvalite, dobrom mene a Vašej spokojnosti. Tá je totiž pre mňa základom našej spolupráce. </p>
                                     </div>
                                 </div>
-
-
-
                             </div>
-
-
                         </div>
 
                         <div className="kde-sme-right">
@@ -140,13 +107,7 @@ export default function KdeNasNajdete() {
                                     referrerpolicy="no-referrer-when-downgrade"
                                     title="welsan"
                                 >
-
-
                                 </iframe>
-
-
-
-
                             </div>
 
                             <div className="headline-box objednanie">
@@ -156,7 +117,6 @@ export default function KdeNasNajdete() {
                                 </div>
                                 <Lines ></Lines>
                             </div>
-
 
                             <div className="objednanie-bubbles-container">
 
@@ -169,10 +129,7 @@ export default function KdeNasNajdete() {
                                         <p>na</p>
                                         <p>0948 592 508</p>
                                         <p>infowelsan@gmail.com</p>
-
-
                                     </div>
-
 
                                     <div className="bubble-img">
                                         <img src="./img/girl.png" alt="" />
@@ -187,11 +144,6 @@ export default function KdeNasNajdete() {
                                 <p>V <span className="pink-span">Písomkovom</span> rýchlokurze je miesto otvorené podľa potreby, ideálne však je zavolať aspoň 2 dni vopred, aby sme sa Vy, ja a Vaše dieťa zladili a pripravili na boj s opravovaním známok :) </p>
                                 <p><strong>Firemné kurzy </strong>sa objednávajú individuálne a sú zostavené na mieru podľa požiadaviek zamestnávateľa. </p>
                             </div>
-
-
-
-
-                            {/* <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/streetview?location=48.4033,17.6089&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="our-googlemap-code" href="https://www.bootstrapskins.com/themes" id="grab-map-info">premium bootstrap themes</a><style>#embed-map-canvas img{max-height:none;max-width:none!important;background:none!important;}</style></div> */}
                         </div>
                     </div>
                 </div>
