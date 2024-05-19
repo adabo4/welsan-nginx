@@ -8,11 +8,8 @@ import MobileNavbar from "../Navbar/MobileNavbar"
 export default function FiremneKurzy() {
 
     return (
-
         <>
-
             <div className="firemne-kurzy">
-                {/* <Navbar /> */}
                 <MobileNavbar />
                 <div className="firemne-kurzy-container">
 
@@ -59,110 +56,92 @@ export default function FiremneKurzy() {
                         <div className="na-mieru-container">
                             <div className="na-mieru-left">
                                 <div className="small-slider">
-                                    {/* <img src="./img/slider-small.png" alt="" /> */}
                                     <Slickslide />
-
                                 </div>
                                 <div className="course-levels">
                                     <div className="level">
                                         <div className="level-text">
-                                        <Lines></Lines>
-                                        <h4 className="green">Od začiatočníkov k pokročilým</h4>
+                                            <Lines></Lines>
+                                            <h4 className="green">Od začiatočníkov k pokročilým</h4>
                                         </div>
                                         <div className="level-line-p">
-                                        <hr />
-                                        <p>Zabezpečíme kurzy pre zamestnancov akejkoľvek úrovne. Minimálny počet v skupinke neexistuje - 
-                                            ak potrebujete zaškoliť tím desiatich ľudí alebo dvoch asistentov, kurz Vám ušijeme priamo na mieru. </p>
-                                    </div>
+                                            <hr />
+                                            <p>Zabezpečíme kurzy pre zamestnancov akejkoľvek úrovne. Minimálny počet v skupinke neexistuje -
+                                                ak potrebujete zaškoliť tím desiatich ľudí alebo dvoch asistentov, kurz Vám ušijeme priamo na mieru. </p>
+                                        </div>
                                     </div>
                                     <div className="level">
                                         <div className="level-text">
-                                        <Lines></Lines>
-                                        <h4  className="pink">V pohodlí Vašej firmy</h4>
+                                            <Lines></Lines>
+                                            <h4 className="pink">V pohodlí Vašej firmy</h4>
                                         </div>
                                         <div className="level-line-p">
-                                        <hr />
-                                        <p>Lektorka príde priamo k Vám do firmy. Výhoda domáceho prostredia pomôže študentom zbaviť sa trémy a lepšie sa 
-                                            adaptovať na novú látku. Ponúkame tiež kurzy priamo u nás v učebni. </p>
-                                            </div>
+                                            <hr />
+                                            <p>Lektorka príde priamo k Vám do firmy. Výhoda domáceho prostredia pomôže študentom zbaviť sa trémy a lepšie sa
+                                                adaptovať na novú látku. Ponúkame tiež kurzy priamo u nás v učebni. </p>
+                                        </div>
                                     </div>
                                     <div className="level">
                                         <Lines></Lines>
                                         <h4 className="pink">Bez stresu</h4>
                                         <div className="level-line-p">
-                                        <hr />
-                                        <p>Naše firemné kurzy zvládne každý. Zakladáme si na empatickom prístupe a pomoci obom stranám - 
-                                            zamestnávateľovi i personálu. Bez omáčok, bez písomiek, náplňou hodín bude len to, čo zamestnanec prakticky využije v  práci, plus niečo navyše :) </p>
-                                    </div>
+                                            <hr />
+                                            <p>Naše firemné kurzy zvládne každý. Zakladáme si na empatickom prístupe a pomoci obom stranám -
+                                                zamestnávateľovi i personálu. Bez omáčok, bez písomiek, náplňou hodín bude len to, čo zamestnanec prakticky využije v  práci, plus niečo navyše :) </p>
+                                        </div>
                                     </div>
                                     <div className="level">
                                         <Lines></Lines>
                                         <h4 className="green">Kombinované kurzy</h4>
                                         <div className="level-line-p">
-                                        <hr />
-                                        <p>V prípade záujmu je možné skombinovať kurzy obchodnej a všeobecnej angličtiny.</p>
+                                            <hr />
+                                            <p>V prípade záujmu je možné skombinovať kurzy obchodnej a všeobecnej angličtiny.</p>
+                                        </div>
                                     </div>
-                                    </div>
-                                    
                                 </div>
-
-
                             </div>
+
                             <div className="na-mieru-right">
                                 <h3>Priamo u nás alebo vo Vašej firme</h3>
 
-                            
                                 <div className="right-textbox" >
                                     <div className="circle-and-header" >
                                         <div className="small-circle">1</div>
-                                        <h3>Business English </h3>   
+                                        <h3>Business English </h3>
                                     </div>
                                     <div className="text-and-line">
-                                    <hr className="left-side-line" />
-                                    <p>Zamestnanci perfektne zvládnu Anglickú korešpondenciu, odosielanie a vystavovanie faktúr, zadávanie objednávok, základnú terminológiu a telefonáty so zahraničnými klientmi v angličtine. Budete sa môcť spoľahnúť na to, že telefonát zo zahraničia prebehne bez trémy. </p>
-                                </div>
+                                        <hr className="left-side-line" />
+                                        <p>Zamestnanci perfektne zvládnu Anglickú korešpondenciu, odosielanie a vystavovanie faktúr, zadávanie objednávok, základnú terminológiu a telefonáty so zahraničnými klientmi v angličtine. Budete sa môcť spoľahnúť na to, že telefonát zo zahraničia prebehne bez trémy. </p>
+                                    </div>
                                 </div>
 
                                 <div className="right-textbox">
-                                <div className="circle-and-header">
-                                    <div className="small-circle">2</div>
+                                    <div className="circle-and-header">
+                                        <div className="small-circle">2</div>
                                         <h3>Všeobecné firemné kurzy</h3>
-                                        </div>
-                                        <div className="text-and-line">
+                                    </div>
+                                    <div className="text-and-line">
                                         <hr className="left-side-line" />
                                         <p>Dovzdelávanie v oblasti všeobecnej angličtiny vo všetkých úrovniach. Zábavné, zo života, bez ťažkej gramatiky... Vaši zamestnanci porozumejú princípom jazyka, ktorí uplatnia v bežnom živote i v práci.</p>
                                     </div>
-                                    </div>
+                                </div>
 
-
-                                
-                                    <div className="right-textbox">
-                                <div className="circle-and-header">
-                                    <div className="small-circle">2</div>
+                                <div className="right-textbox">
+                                    <div className="circle-and-header">
+                                        <div className="small-circle">2</div>
                                         <h3>Teambuildingy a semináre</h3>
-                                        </div>
-                                        <div className="text-and-line">
+                                    </div>
+                                    <div className="text-and-line">
                                         <hr className="left-side-line" />
                                         <p>Ak potrebujete lektora na firemný teambuilding po anglicky, sme tu pre Vás. Aktivity a motivačné cvičenia v rámci Vašej firemnej politiky i pre zahraničných zamestnancov, ktorí vyžadujú vysokú úroveň komunikácie.</p>
                                     </div>
-                                    </div>
-
-
-
+                                </div>
                             </div>
                         </div>
-
-
                     </div>
-
                 </div>
-
-                <Footer>    </Footer>
-
-
-
+                <Footer />
             </div>
-
         </>
     )
 }
