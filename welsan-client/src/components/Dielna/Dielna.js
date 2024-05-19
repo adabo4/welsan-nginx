@@ -1,5 +1,4 @@
 import Lines from "../Lines/Lines";
-import Navbar from "../Navbar/Navbar";
 import "./dielna.css";
 import Footer from "../Footer/Footer"
 import MobileNavbar from "../Navbar/MobileNavbar";
@@ -8,10 +7,10 @@ export default function Dielna() {
     return (
         <>
             <section className="english-dielna">
-                {/* <Navbar /> */}
-                <MobileNavbar /> 
-                <div className="tvoriva-dielna-container">
 
+                <MobileNavbar />
+
+                <div className="tvoriva-dielna-container">
 
                     <div className="headline-box">
                         <div className='ponuka-headline'>
@@ -35,7 +34,6 @@ export default function Dielna() {
 
                         </div>
 
-
                         <div className="video-bubble">
                             <video src="./img/kids.mp4" autoPlay loop muted></video>
 
@@ -55,7 +53,7 @@ export default function Dielna() {
                     <div className="malovanie">
                         <div className="separate">
                             <div className="malovanie-figurok">
-                                <img src="./img/malovanie1.png" alt="Malovanie Figurok image" />
+                                <img src="./img/malovanie1.png" alt="Malovanie Figurok" />
                             </div>
 
                             <div className="malovanie-figurok">
@@ -68,29 +66,20 @@ export default function Dielna() {
                         </div>
 
                         <div className="separate">
-
-
-
-
-
                             <div className="malovanie-figurok">
                                 <img src="./img/malovanie.png" alt="" className="this-img" />
                             </div>
-
                             <div className="malovanie-figurok">
                                 <div className="malovanie-text">
                                     <h3 className="green">Tričko na mieru</h3>
                                     <p>Spoznáme všetky farby dúhy na tričku, ktoré si po skončení dielne odnesiete domov. </p>
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
                 </div>
                 <Footer />
-
-
             </section>
         </>
     )

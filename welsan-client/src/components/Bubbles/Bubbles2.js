@@ -3,7 +3,6 @@ import { HashLink } from "react-router-hash-link";
 import './Bubbles2.css';
 export default function Bubbles2() {
 
-
     return (
         <>
             <div className="container-bubbles-2">
@@ -35,7 +34,6 @@ export default function Bubbles2() {
                         <Link to="mailto:infowelsan@gmail.com"><p>infowelsan@gmail.com  </p></Link>
                     </div>
 
-
                 </div>
 
                 <div className="item kontakt-2">
@@ -44,14 +42,11 @@ export default function Bubbles2() {
 
                 </div>
 
-
                 <div className="item hidden"></div>
                 <div className="item find-us-2"> <p><HashLink to="/kde-nas-najdete#map" scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}>Kde sídlime</HashLink></p></div>
                 <div className="item hidden">
 
                 </div>
-
-
 
             </div>
         </>
