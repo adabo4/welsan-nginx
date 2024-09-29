@@ -11,7 +11,10 @@
 # production
 /build
 
+
 # misc
+.scripts
+.github
 .DS_Store
 .env
 .env.local
