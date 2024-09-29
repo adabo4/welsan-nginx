@@ -6,12 +6,7 @@ on:
       - master # Change this to your main branch nam
   pull_request:
     branches:
-      - master # Change this to your main branch namd
-
-env:
-  REACT_APP_CONVERTKIT_KEY: ${{ secrets.REACT_APP_CONVERTKIT_KEY }}
-  REACT_APP_CONVERTKIT_ID: ${{ secrets.REACT_APP_CONVERTKIT_ID }}
-  REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
+      - master # Change this to your main branch nam
 
 jobs:
   deploy:
