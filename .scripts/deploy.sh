@@ -26,4 +26,4 @@ rm -rf /var/www/welsan/*
 # Copy new build files to the destination directory
 cp -r build /var/www/welsan/
 
-pm2 reload server
+pm2 reload backend

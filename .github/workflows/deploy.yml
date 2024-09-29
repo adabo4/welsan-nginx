@@ -36,4 +36,4 @@ jobs:
             echo "REACT_APP_CONVERTKIT_ID=${{ secrets.REACT_APP_CONVERTKIT_ID }}" >> welsan/.env
             echo "REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}" >> welsan/.env 
 
-            ./.scripts/deploy.sh"
+            && ./.scripts/deploy.sh"
