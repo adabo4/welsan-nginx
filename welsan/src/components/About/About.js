@@ -57,7 +57,7 @@ function About() {
 
 
                         <div className="about-text">
-                            <p>Ahojte, volám sa Silvia, som 32-ročná, zanietená lektorka s dlhoročnými skúsenosťami v oblasti tlmočenia,
+                            <p>Ahojte, volám sa Silvia, som 34-ročná, zanietená lektorka s dlhoročnými skúsenosťami v oblasti tlmočenia,
                                 prekladov a výučby anglického jazyka. Na jazyk sa pozerám z pohľadu študenta a nie kníh,
                                 slovníkov či machra, ktorý už roky plynulo spíkuje.</p>
                             <p>Som tu pre ...</p>
