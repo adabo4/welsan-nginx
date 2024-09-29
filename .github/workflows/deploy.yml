@@ -20,8 +20,8 @@ jobs:
 
       - name: Deploy to Server
         run: |
-          ssh user@your-server-ip << 'EOF'
-            cd /var/www/git/* || exit
+          ssh -o StrictHostKeyChecking=no root@85.31.239.168 << 'EOF'
+            cd /var/www/git/ || exit
             git pull origin master  # Change to your main branch
             cd server
             npm install
