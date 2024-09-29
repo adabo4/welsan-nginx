@@ -16,7 +16,7 @@ function Footer() {
                 <div className="footer-container-small">
                     <div className="footer-box">
                         <div className="footer-box-text">
-                            <h4>Kurzy denne od 7:30 do 19:00.</h4>
+                            <h4>Kurzy denne od 7:30 do 19:00</h4>
                             <hr />
                         </div>
                         <div className="footer-p">
