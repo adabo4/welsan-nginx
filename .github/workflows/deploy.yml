@@ -3,7 +3,10 @@ name: Deploy to Server
 on:
   push:
     branches:
-      - master # Change this to your main branch name
+      - master # Change this to your main branch nam
+  pull_request:
+    branches:
+      - master # Change this to your main branch nam
 
 jobs:
   deploy:
@@ -11,23 +14,13 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.5.3
+        uses: appleboy/ssh-action@master
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Deploy to Server
-        run: |
-          ssh -o StrictHostKeyChecking=no root@85.31.239.168 << 'EOF'
-            cd /var/www/git/ || exit
-            git pull origin master  # Change to your main branch
-            cd server
-            npm install
-            cd ../welsan
-            npm install
-            npm run build
-            rm -rf /var/www/welsan/*
-            mv build /var/www/welsan
-          EOF
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.SSH_PORT }}
+          key: ${{secrets.SSH_PRIVATE_KEY}}
+          script: "cd /var/www/git/ && ./.scripts/deploy.sh"
