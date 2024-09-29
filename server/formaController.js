@@ -33,7 +33,7 @@ const subscribeEmail = async (req, res) => {
 
         console.log('Subscriber added:', response.data);
     } catch (error) {
-        // Check if error.response exists before trying to access error.response.data
+
         console.error('Error adding subscriber:', error.response ? error.response.data : error.message);
         res.status(500).json({ message: 'Nepodarilo sa prihlásiť na odber noviniek.' });
     }
