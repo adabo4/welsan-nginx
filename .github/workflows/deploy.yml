@@ -23,17 +23,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{secrets.SSH_PRIVATE_KEY}}
-          script: |
-            "cd /var/www/git
-
-             # Create .env for the server
-            echo "REACT_APP_CONVERTKIT_KEY=${{ secrets.REACT_APP_CONVERTKIT_KEY }}" >> server/.env
-            echo "REACT_APP_CONVERTKIT_ID=${{ secrets.REACT_APP_CONVERTKIT_ID }}" >> server/.env
-            echo "REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}" >> server/.env
-
-            # Create .env for the welsan
-            echo "REACT_APP_CONVERTKIT_KEY=${{ secrets.REACT_APP_CONVERTKIT_KEY }}" >> welsan/.env
-            echo "REACT_APP_CONVERTKIT_ID=${{ secrets.REACT_APP_CONVERTKIT_ID }}" >> welsan/.env
-            echo "REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}" >> welsan/.env 
-
-            && ./.scripts/deploy.sh"
+          script: "cd /var/www/git && ./.scripts/deploy.sh"
