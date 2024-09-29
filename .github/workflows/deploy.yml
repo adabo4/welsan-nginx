@@ -25,7 +25,7 @@ jobs:
             git pull origin master  # Change to your main branch
             cd server
             npm install
-            cd ../frontend
+            cd ../welsan
             npm install
             npm run build
             rm -rf /var/www/welsan/*
