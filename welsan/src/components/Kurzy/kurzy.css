@@ -109,6 +109,22 @@
   left: 0;
 }
 
+.kurzy-headline .autumn-img {
+  width: 20rem;
+  position: absolute;
+  left: 0;
+
+
+}
+
+.kurzy-headline .pumpkin-img {
+  width: 10rem;
+
+
+
+
+}
+
 @media screen and (max-width: 1110px) {
   .kurzy-container {
     margin: 0 auto;
@@ -164,6 +180,21 @@
     margin: 2rem 0;
     width: 8rem;
   }
+
+  .kurzy-headline .autumn-img {
+    position: relative;
+    transform: translateY(50px);
+
+
+  }
+
+  .kurzy-headline .pumpkin-img {
+    position: relative;
+
+
+  }
+
+
 
   .kurzy-headline .snowflake-img {
     left: 150px;
