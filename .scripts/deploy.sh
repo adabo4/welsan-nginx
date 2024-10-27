@@ -6,7 +6,7 @@ echo "Deployment started"
 
 cd /var/www/git
 
-git pull origin master .
+git pull origin master
 echo "New changes copied to server!" 
 
 # # Create .env for the server
