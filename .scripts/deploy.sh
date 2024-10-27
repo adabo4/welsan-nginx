@@ -6,19 +6,18 @@ echo "Deployment started"
 
 cd /var/www/git
 
-git pull origin master 
+git pull origin master .
 echo "New changes copied to server!" 
 
+# # Create .env for the server
+# echo "REACT_APP_CONVERTKIT_KEY=${REACT_APP_CONVERTKIT_KEY}" >> server/.env
+# echo "REACT_APP_CONVERTKIT_ID=${REACT_APP_CONVERTKIT_ID}" >> server/.env
+# echo "REACT_APP_API_URL=${REACT_APP_API_URL}" >> server/.env
 
-# Create .env for the server
-echo "REACT_APP_CONVERTKIT_KEY=${REACT_APP_CONVERTKIT_KEY}" >> server/.env
-echo "REACT_APP_CONVERTKIT_ID=${REACT_APP_CONVERTKIT_ID}" >> server/.env
-echo "REACT_APP_API_URL=${REACT_APP_API_URL}" >> server/.env
-
-# Create .env for the welsan
-echo "REACT_APP_CONVERTKIT_KEY=${REACT_APP_CONVERTKIT_KEY}" >> welsan/.env
-echo "REACT_APP_CONVERTKIT_ID=${REACT_APP_CONVERTKIT_ID}" >> welsan/.env
-echo "REACT_APP_API_URL=${REACT_APP_API_URL}" >> welsan/.env
+# # Create .env for the welsan
+# echo "REACT_APP_CONVERTKIT_KEY=${REACT_APP_CONVERTKIT_KEY}" >> welsan/.env
+# echo "REACT_APP_CONVERTKIT_ID=${REACT_APP_CONVERTKIT_ID}" >> welsan/.env
+# echo "REACT_APP_API_URL=${REACT_APP_API_URL}" >> welsan/.env
 
 cd server
 
@@ -31,10 +30,25 @@ npm install --yes
 echo "Running the build"
 npm run build
 
-# Clear the existing files in the destination directory
-rm -rf /var/www/welsan/*
+# Create a temporary directory for the new build
+TEMP_DIR="/var/www/welsan_temp"
 
-# Copy new build files to the destination directory
-cp -r build /var/www/welsan/
+# Remove the temporary directory if it exists
+rm -rf $TEMP_DIR
+mkdir $TEMP_DIR
 
-pm2 reload backend
+# Copy new build files to the temporary directory
+cp -r build/* $TEMP_DIR/
+
+mv $TEMP_DIR/* /var/www/welsan/
+
+# Remove the temporary directory
+rmdir $TEMP_DIR
+
+# # Clear the existing files in the destination directory
+# rm -rf /var/www/welsan/*
+
+# # Copy new build files to the destination directory
+# cp -r build /var/www/welsan/
+
+pm2 reload server2

@@ -141,6 +141,10 @@
 
 }
 
+.contact-us {
+  cursor: pointer;
+}
+
 .find-us-2 {
   width: 150px;
   height: 150px;
