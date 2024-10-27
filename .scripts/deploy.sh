@@ -95,12 +95,12 @@ mkdir $TEMP_DIR
 # Copy new build files to the temporary directory
 cp -r build $TEMP_DIR/
 
-# Use rsync to copy new build files, overwriting existing ones
-rsync -a --delete $TEMP_DIR/ /var/www/welsan/
-
+# Move the new build files into the production directory
+rm -rf /var/www/welsan/build/*
+mv $TEMP_DIR/build/* /var/www/welsan/build/*
 
 # Remove the temporary directory
-rmdir $TEMP_DIR
+rm -rf $TEMP_DIR
 
 # Reload the server using pm2
 pm2 reload server2
