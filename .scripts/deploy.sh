@@ -93,7 +93,7 @@ rm -rf $TEMP_DIR
 mkdir $TEMP_DIR
 
 # Copy new build files to the temporary directory
-cp -r build/* $TEMP_DIR/
+cp -r build $TEMP_DIR/
 
 # Move the new build files into the production directory
 mv $TEMP_DIR/* /var/www/welsan/

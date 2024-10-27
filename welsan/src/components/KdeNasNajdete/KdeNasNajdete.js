@@ -4,6 +4,7 @@ import Footer from "../Footer/Footer";
 import { SlArrowDown } from "react-icons/sl";
 import { HashLink } from "react-router-hash-link";
 import MobileNavbar from "../Navbar/MobileNavbar";
+import { Link } from "react-router-dom";
 
 
 export default function KdeNasNajdete() {
@@ -122,13 +123,13 @@ export default function KdeNasNajdete() {
 
                                 <h3>Telefonicky, mailom, online dotazník</h3>
 
-                                <div className="bubbles-box">
+                                <div className="bubbles-box" id="contact">
                                     <div className="green-bubble">
 
                                         <p>Zavolajte</p>
                                         <p>na</p>
                                         <p>0948 592 508</p>
-                                        <p>infowelsan@gmail.com</p>
+                                        <p><Link to={"mailto:infowelsan@gmail.com"}>infowelsan@gmail.com</Link></p>
                                     </div>
 
                                     <div className="bubble-img">

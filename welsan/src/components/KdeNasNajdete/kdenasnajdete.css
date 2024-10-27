@@ -248,6 +248,11 @@
 
 }
 
+.objednanie-bubbles-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .green-bubble {
     width: 300px;
     height: 300px;
@@ -270,6 +275,8 @@
     margin-top: 5px;
 
 }
+
+
 
 .green-bubble p:last-child {
     text-transform: none;

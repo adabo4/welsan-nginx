@@ -121,6 +121,13 @@
   text-transform: uppercase;
   margin-right: 8rem;
   transform: translate(-200px, -50px);
+
+}
+
+.kontakt-2 .contact-us a {
+  text-decoration: none;
+  color: inherit;
+  /* Use the inherited color */
 }
 
 .sign-up-text a {
@@ -144,6 +151,8 @@
 .contact-us {
   cursor: pointer;
 }
+
+
 
 .find-us-2 {
   width: 150px;
