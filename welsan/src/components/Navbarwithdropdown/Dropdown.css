@@ -60,7 +60,12 @@
     }
 
     .dropdown-menu li {
-        margin: 5px;
+        margin: 0px;
+        padding: 0;
+    }
+
+    .dropdown-link {
+        color: black;
     }
 
 
