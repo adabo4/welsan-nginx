@@ -34,7 +34,7 @@ function Footer() {
                         <div className="footer-p">
                             <p>Malženická cesta 3 </p><p>
                                 91701,</p> <p>Trnava</p>
-                            <p>infowelsan@gmail.com</p>
+                            <p ><Link className="footer-mail" to="mailto:infowelsan@gmail.com">infowelsan@gmail.com</Link></p>
                         </div>
 
 
@@ -73,7 +73,7 @@ function Footer() {
                         <div className="footer-box-text">
                             <hr />
                             <p style={style}>Telefón</p>
-                            <p style={style}><Link to="tel:0948 592 508">0948 592 508</Link></p>
+                            <p style={style}><Link className="footer-tel" to="tel:0948 592 508">0948 592 508</Link></p>
                         </div>
                     </div>
 

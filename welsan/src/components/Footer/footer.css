@@ -67,17 +67,29 @@ FOOTER
 
 }
 
-.footer-box a {
+.footer-tel {
   text-decoration: none;
   color: #dd3782;
+
 }
 
-.footer-box a:hover {
+.footer-tel:hover {
   color: #f77eb6;
+  text-decoration: underline;
 }
 
 .footer-box p:first-of-type {
   margin-top: 1em;
+}
+
+.footer-mail {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-mail:hover {
+  text-decoration: underline;
 }
 
 .footer-box hr {
