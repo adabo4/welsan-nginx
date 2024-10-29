@@ -1,5 +1,6 @@
 import Subscribe from "../Subscribe/Subscribe";
 import "./footer.css"
+import { Link } from "react-router-dom";
 function Footer() {
 
     const style = {
@@ -72,7 +73,7 @@ function Footer() {
                         <div className="footer-box-text">
                             <hr />
                             <p style={style}>Telefón</p>
-                            <p style={style}>0948 592 508</p>
+                            <p style={style}><Link to="tel:0948 592 508">0948 592 508</Link></p>
                         </div>
                     </div>
 
