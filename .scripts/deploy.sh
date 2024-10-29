@@ -93,14 +93,14 @@ rm -rf $TEMP_DIR
 mkdir $TEMP_DIR
 
 # Copy new build files to the temporary directory
-cp -r build/* $TEMP_DIR/
+cp -r build $TEMP_DIR/
 
-# Ensure the production build directory exists
-BUILD_DIR="/var/www/welsan/build"
-mkdir -p $BUILD_DIR  # Create the directory if it doesn't exist
+# # Ensure the production build directory exists
+# BUILD_DIR="/var/www/welsan/build"
+# mkdir -p $BUILD_DIR  # Create the directory if it doesn't exist
 
 # Move the new build files into the production directory
-mv $TEMP_DIR/* $BUILD_DIR/
+mv $TEMP_DIR/build "/var/www/welsan/"
 
 # Remove the temporary directory
 rm -rf $TEMP_DIR
