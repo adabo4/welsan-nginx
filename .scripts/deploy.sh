@@ -40,6 +40,9 @@ mkdir $TEMP_DIR
 # Copy new build files to the temporary directory
 cp -r build $TEMP_DIR/
 
+# Remove the old build folder if it exists
+rm -rf /var/www/welsan/build
+
 # Move the new build files into the production directory
 mv $TEMP_DIR/build "/var/www/welsan/"
 
