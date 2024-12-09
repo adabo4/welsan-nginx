@@ -1,5 +1,5 @@
 
-export default function KurzCard(props) {
+export default function CourseCard(props) {
     return (
         <>
             <div className="course-card">

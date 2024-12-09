@@ -1,11 +1,11 @@
-.tlmocenie-container-druhy{
+.tlmocenie-container-druhy {
     max-width: 1000px;
     width: 100%;
     margin: 1rem auto;
     position: relative;
 }
 
-/* .headline-box .ponuka-headline{
+/* .headline-box .option-headline{
    
     margin: 0 auto;
 }
@@ -14,7 +14,7 @@
     margin: 0 auto;
 } */
 
-.tlmocenie-content{
+.tlmocenie-content {
     display: flex;
     width: 100%;
     position: relative;
@@ -23,17 +23,18 @@
 
 }
 
-.tlmocenie-left{
+.tlmocenie-left {
     width: 65%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start ;
-    
-   
+    align-items: flex-start;
 
-   
+
+
+
 }
-.tlmocenie-left .small-circle-tlmocenie{
+
+.tlmocenie-left .small-circle-tlmocenie {
     background-color: #DD3782;
     z-index: -1;
     width: 100px;
@@ -41,7 +42,7 @@
     border-radius: 50%;
     position: absolute;
     transform: translate(60px, -40px);
-    
+
 }
 
 
@@ -52,18 +53,18 @@
    
 } */
 
-.tlmocenie-left h2{
+.tlmocenie-left h2 {
     font-family: var(--h1-li-font-enriqueta);
     font-size: 35px;
     font-weight: 400;
     margin-left: 60px;
 
-    
+
 
 }
 
 
-.tlmocenie-left p{
+.tlmocenie-left p {
     font-family: var(--p-font);
     font-size: 14px;
     line-height: 1.3em;
@@ -83,64 +84,65 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-  
-  
-  }
-  
-  .tlmocenie-bubble-text {
+
+
+}
+
+.tlmocenie-bubble-text {
     position: absolute;
     text-transform: none;
     color: white;
     font-weight: 400;
-  
-  
-  }
-  
-  
-  .tlmocenie-bubble-text h2 {
+
+
+}
+
+
+.tlmocenie-bubble-text h2 {
     font-size: 40px;
     line-height: 1.1em;
-    font-weight: 400;    
+    font-weight: 400;
     font-family: var(--josefin-font);
 
-  }
-  
-  .tlmocenie-bubble-text p {
-   
-   
+}
+
+.tlmocenie-bubble-text p {
+
+
     font-size: 20px;
     font-family: var(--h1-li-font-enriqueta);
-  }
+}
 
-  .tlmocenie-bubble-text p:nth-of-type(3){
-    font-size:32px;
+.tlmocenie-bubble-text p:nth-of-type(3) {
+    font-size: 32px;
     line-height: 1.2em;
-   
-    font-family: var(--josefin-font);
-  }
-  .tlmocenie-bubble-text p:nth-of-type(4){
-    font-size:24px;
-    line-height: 1.2em;
-    font-family: var(--josefin-font);
-  }
-  
-  @media screen and (max-width: 1110px) {
 
-    .tlmocenie-content{
+    font-family: var(--josefin-font);
+}
+
+.tlmocenie-bubble-text p:nth-of-type(4) {
+    font-size: 24px;
+    line-height: 1.2em;
+    font-family: var(--josefin-font);
+}
+
+@media screen and (max-width: 1110px) {
+
+    .tlmocenie-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
 
-    .tlmocenie-left{
+    .tlmocenie-left {
 
         /* text-align: center; */
         width: 80%;
         margin: 0 auto;
     }
 
-    .tlmocenie-left h2{
+    .tlmocenie-left h2 {
         margin-left: 60px;
     }
 
@@ -152,39 +154,39 @@
 
 
 
-    .tlmocenie-container-druhy{
+    .tlmocenie-container-druhy {
         width: 100%;
     }
 
-    
-  }
 
-  @media screen and (max-width:550px){
+}
 
-    .tlmocenie-left{
+@media screen and (max-width:550px) {
+
+    .tlmocenie-left {
         text-align: center;
         margin: 0 auto;
     }
 
-    .tlmocenie-left h2{
+    .tlmocenie-left h2 {
         font-size: 30px;
         margin: 0 auto;
     }
 
-    .tlmocenie-left .small-circle-tlmocenie{
+    .tlmocenie-left .small-circle-tlmocenie {
         transform: translate(20px, -40px);
     }
-    
-  }
 
-  @media screen and (max-width: 290px) {
-    .tlmocenie-bubble{
+}
+
+@media screen and (max-width: 290px) {
+    .tlmocenie-bubble {
         width: 250px;
         height: 250px;
 
     }
 
-    .tlmocenie-bubble-text{
+    .tlmocenie-bubble-text {
         margin-bottom: 3rem;
     }
 
@@ -193,18 +195,18 @@
 
 
     }
-    
-    .tlmocenie-bubble-text p{
-        font-size:  15px;
-       
+
+    .tlmocenie-bubble-text p {
+        font-size: 15px;
+
     }
 
 
-    #ponuka-headline{
+    #option-headline {
         font-size: 30px;
     }
 
-    .tlmocenie-left .small-circle-tlmocenie{
+    .tlmocenie-left .small-circle-tlmocenie {
         transform: translate(1px, -40px);
     }
 

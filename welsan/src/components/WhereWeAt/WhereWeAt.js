@@ -1,5 +1,5 @@
 import Lines from "../Lines/Lines";
-import "./kdenasnajdete.css"
+import "./whereweat.css"
 import Footer from "../Footer/Footer";
 import { SlArrowDown } from "react-icons/sl";
 import { HashLink } from "react-router-hash-link";
@@ -7,24 +7,24 @@ import MobileNavbar from "../Navbar/MobileNavbar";
 import { Link } from "react-router-dom";
 
 
-export default function KdeNasNajdete() {
+export default function WhereWeAt() {
     return (
         <>
-            <div className="kde-nas-najdete" id="kde-nas-najdete">
+            <div id="kde-nas-najdete">
                 <MobileNavbar />
-                <div className="najdete-nas-container">
+                <div className="find-us-at-container">
 
                     <div className="headline-box">
-                        <div className='ponuka-headline'>
+                        <div className='option-headline'>
                             Kde sme?
                         </div>
                         <Lines ></Lines>
                     </div>
 
-                    <div className="kde-sme-content">
-                        <div className="kde-sme-left">
-                            <div className="kde-sme-bubble">
-                                <div className="kde-sme-bubble-text">
+                    <div className="our-location-content">
+                        <div className="our-location-left">
+                            <div className="our-location-bubble">
+                                <div className="our-location-bubble-text">
                                     <hr className="first-line" />
                                     <hr className="first-line" />
                                     <hr className="second-line" />
@@ -86,7 +86,7 @@ export default function KdeNasNajdete() {
 
                         <div className="kde-sme-right">
                             <div className="headline-box">
-                                <div className='ponuka-headline'>
+                                <div className='option-headline'>
                                     <div className="small-circle-kde"></div>
                                     <h2> Učebňa Trnava
                                     </h2>
@@ -94,7 +94,7 @@ export default function KdeNasNajdete() {
                                 <Lines ></Lines>
                             </div>
 
-                            <div className="kde-sme-text">
+                            <div className="our-location-text">
                                 <p>Nájdete nás na adrese Malženická cesta 3  v Trnave. Jazyková učebňa sa nachádza na okraji mesta, vedľa tichej štvrte Kopánka s vlastným parkovaním zadarmo. Bez problémov sa k nám dostanete i z okolia cez trnavský obchvat.</p>
                             </div>
 
@@ -112,7 +112,7 @@ export default function KdeNasNajdete() {
                             </div>
 
                             <div className="headline-box objednanie">
-                                <div className='ponuka-headline'>
+                                <div className='option-headline'>
                                     <div className="small-circle-kde green-kde"></div>
                                     <h2>Ako sa objednať? </h2>
                                 </div>
@@ -140,7 +140,7 @@ export default function KdeNasNajdete() {
 
                             <hr />
 
-                            <div className="objednaj-sa-text">
+                            <div className="reserve-term-text">
                                 <p>Z dôvodu zvýšeného záujmu študentov je dobré si rezervovať miesto v <span className="green-span">10. hodinových kurzoch</span> čím skôr. Získate tak istotu, že Vami vybraný termín ešte nebude obsadený. Po potvrdení termínu ho máte záväzne rezervovaný. </p>
                                 <p>V <span className="pink-span">Písomkovom</span> rýchlokurze je miesto otvorené podľa potreby, ideálne však je zavolať aspoň 2 dni vopred, aby sme sa Vy, ja a Vaše dieťa zladili a pripravili na boj s opravovaním známok :) </p>
                                 <p><strong>Firemné kurzy </strong>sa objednávajú individuálne a sú zostavené na mieru podľa požiadaviek zamestnávateľa. </p>

@@ -8,12 +8,12 @@ import {
   RouterProvider
 } from "react-router-dom";
 import PonukaKurzov from './components/PonukaKurzov';
-import FiremneKurzy from './components/FiremneKurzy/FiremneKurzy';
-import KdeNasNajdete from './components/KdeNasNajdete/KdeNasNajdete';
+import BusinessCourses from './components/BusinessCourses/BusinessCourses';
+import WhereWeAt from './components/WhereWeAt/WhereWeAt';
 import Tlmocenie from './components/Tlmocenie/Tlmocenie';
-import EngDospeli from './components/EngDospeli/EngDospeli';
-import Dielna from './components/Dielna/Dielna'
-import EngDeti from './components/EngDeti/EngDeti'
+import EngAdults from './components/EngAdults/EngAdults';
+import Workshop from './components/Workshop/Workshop'
+import EngChildren from './components/EngChildren/EngChildren'
 import Gdpr from './components/Gdpr/Gdpr';
 
 const router = createBrowserRouter([
@@ -28,13 +28,13 @@ const router = createBrowserRouter([
 
   {
     path: "/firemne-kurzy",
-    element: <FiremneKurzy />
+    element: <BusinessCourses />
 
 
   },
   {
     path: "/kde-nas-najdete",
-    element: <KdeNasNajdete />
+    element: <WhereWeAt />
   },
   {
     path: "/tlmocenie-a-preklady",
@@ -42,15 +42,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/ang-dospeli",
-    element: <EngDospeli />
+    element: <EngAdults />
   },
   {
     path: "/ang-deti",
-    element: <EngDeti />
+    element: <EngChildren />
   },
   {
     path: "/tvoriva-dielna",
-    element: <Dielna />
+    element: <Workshop />
   },
   {
     path: "/gdpr",

@@ -1,14 +1,14 @@
 import Lines from "../Lines/Lines";
-import "./engdospeli.css"
+import "./engadults.css"
 import Accordion from "./Accordion";
 import Boxes from "./Boxes";
 import Footer from "../Footer/Footer"
-import KurzCard from "../EngDeti/KurzCard";
-import kurzinfo from "../EngDeti/kurzinfo";
+import CourseCard from "../EngChildren/CourseCard";
+import courseinfo from "../EngChildren/courseinfo";
 import MobileNavbar from "../Navbar/MobileNavbar";
 import EmailJSForm from "../EmailJSForm";
 
-export default function EngDospeli() {
+export default function EngAdults() {
 
     const databoxes = [
         {
@@ -40,15 +40,15 @@ export default function EngDospeli() {
                 <MobileNavbar />
                 <div className="eng-adults-container">
                     <div className="headline-box">
-                        <div className='ponuka-headline'>
+                        <div className='option-headline'>
                             Angličtina dospelí
                         </div>
                         <Lines ></Lines>
                     </div>
                     <h2 className="detailed-title">Detailný popis kurzov</h2>
                     <div className="card-cont" id="dospeli">
-                        {kurzinfo.map((item, i) => {
-                            return <KurzCard title={item.title} desc={item.desc} price={item.price} color={item.color} />
+                        {courseinfo.map((item, i) => {
+                            return <CourseCard title={item.title} desc={item.desc} price={item.price} color={item.color} />
 
                         })}
                     </div>

@@ -1,4 +1,4 @@
-import Ponuka from "./Ponuka";
+import Menu from "./Menu.js";
 import Kurzy from './Kurzy/Kurzy.js'
 import Footer from "./Footer/Footer"
 import MobileNavbar from "./Navbar/MobileNavbar";
@@ -8,7 +8,7 @@ function PonukaKurzov() {
 
         <div className="o-kurzoch">
             <MobileNavbar />
-            <Ponuka />
+            <Menu />
             <Kurzy></Kurzy>
             <Footer></Footer>
         </div>

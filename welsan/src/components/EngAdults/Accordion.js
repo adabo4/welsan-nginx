@@ -48,12 +48,12 @@ export default function Accordion() {
                     {data.map((item, i) => {
                         return (
                             <div key={item.id}>
-                                <div className="polozka">
-                                    <div className="nadpis" onClick={() => toggle(i)} style={{ color: item.color }}>
+                                <div className="accordion-item">
+                                    <div className="accordion-headline" onClick={() => toggle(i)} style={{ color: item.color }}>
                                         <h2>{item.BlogTitle}</h2>
                                         <span>{selected === i ? ' - ' : ' + '}</span>
                                     </div>
-                                    <div className={selected === i ? 'obsah show' : 'obsah'}>
+                                    <div className={selected === i ? 'accordion-content show' : 'accordion-content'}>
                                         <FormattedShortStory
                                             className="date"
                                             pattern={"YES"}

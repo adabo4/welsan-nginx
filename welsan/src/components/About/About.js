@@ -4,13 +4,10 @@ import { HashLink } from "react-router-hash-link";
 
 
 function About() {
-
     return (
         <>
             <div className="center">
-
                 <div className="left-side">
-
                     <div className="left-text">
                         <div className="small-circle">1</div>
                         <div style={{ display: "inline-block" }}>
@@ -35,27 +32,17 @@ function About() {
                             <p>Žiadny stres z nanútenej domácej úlohy, alebo vymeškania hodiny. Odteraz Vám rodinná oslava, rodičovské združenie alebo chrípka angličtinu nepokazí. Hodinu presunieme a Vy neprídete ani o minútu zaplateného času. </p>
                         </div>
                     </div>
-
-
                 </div>
-
-
-
                 <div className="right-side">
-
                     <div className="right-text">
                         <hr className="line" />
                         <hr className="thin" />
                         <hr className="line-dotted" />
                         <div className="small-circle"></div>
-
                         <h3>O mne</h3>
                         <hr className="line-dotted" />
                         <hr className="thin" />
                         <hr className="line" />
-
-
-
                         <div className="about-text">
                             <p>Ahojte, volám sa Silvia, som 34-ročná, zanietená lektorka s dlhoročnými skúsenosťami v oblasti tlmočenia,
                                 prekladov a výučby anglického jazyka. Na jazyk sa pozerám z pohľadu študenta a nie kníh,
@@ -81,22 +68,11 @@ function About() {
                             </ul>
 
                         </div>
-
                         <HashLink to="/o-kurzoch#ponuka" scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}><button className="btn-info">Viac info...</button></HashLink>
-
                         <img src={london} className="london-img" alt="London"></img>
-
-
                     </div>
-
-
-
                 </div>
-
-
             </div>
-
-
         </>
     )
 }

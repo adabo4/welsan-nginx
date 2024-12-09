@@ -33,7 +33,7 @@
     z-index: +1;
 }
 
-.nadpis {
+.accordion-headline {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -42,7 +42,7 @@
     padding-bottom: 10px;
 }
 
-.obsah {
+.accordion-content {
     width: 90%;
     text-align: justify;
     margin: 1rem auto;
@@ -54,7 +54,7 @@
 
 }
 
-.obsah.show {
+.accordion-content.show {
     height: auto;
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
@@ -63,7 +63,7 @@
 
 
 @media screen and (max-width: 1110px) {
-    .obsah {
+    .accordion-content {
         text-align: start;
     }
 }

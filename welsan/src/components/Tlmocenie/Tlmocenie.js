@@ -12,7 +12,7 @@ export default function Tlmocenie() {
 
                 <div className="tlmocenie-container-druhy">
                     <div className="headline-box">
-                        <div className='ponuka-headline'>
+                        <div className='option-headline'>
                             Tlmočenie a Preklady
                         </div>
                         <Lines ></Lines>

@@ -1,9 +1,9 @@
 import Lines from "../Lines/Lines";
-import "./dielna.css";
+import "./workshop.css";
 import Footer from "../Footer/Footer"
 import MobileNavbar from "../Navbar/MobileNavbar";
 
-export default function Dielna() {
+export default function Workshop() {
     return (
         <>
             <section className="english-dielna">
@@ -13,7 +13,7 @@ export default function Dielna() {
                 <div className="tvoriva-dielna-container">
 
                     <div className="headline-box">
-                        <div className='ponuka-headline'>
+                        <div className='option-headline'>
                             Tvorivá dielňa
                         </div>
                         <Lines ></Lines>

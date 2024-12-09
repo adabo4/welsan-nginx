@@ -8,13 +8,10 @@ import Footer from '../Footer/Footer'
 export default function Gdpr() {
     return (
         <>
-            <MobileNavbar
-            />
-
+            <MobileNavbar />
             <div className="gdpr-container" id='gdpr'>
-
                 <div className="headline-box">
-                    <div className='ponuka-headline'>
+                    <div className='option-headline'>
                         Podmienky ochrany osobných údajov
                     </div>
                     <Lines ></Lines>
@@ -25,14 +22,12 @@ export default function Gdpr() {
                 <div className='gdpr-text'>
                     <ol className='gdpr-list'>
                         <li>
-
                             Správcom osobných údajov podľa článku 4 ods. 7 nariadenia Európskeho parlamentu a Rady (EÚ)
                             2016/679 o ochrane fyzických osôb pri spracovaní osobných údajov a voľnom pohybe týchto údajov
                             (ďalej len „GDPR”) je WELSAN s.r.o., IČO: 51842769, so sídlom Maxima Gorkého 4, 917 02, Trnava (ďalej len: „správca“).
 
                         </li>
                         <li>
-
                             Kontaktné údaje správcu sú:
                             <ul className='unordered-list'>
                                 <li>
@@ -45,7 +40,6 @@ export default function Gdpr() {
                                     tel.: +421948592508
                                 </li>
                             </ul>
-
                         </li>
                         <li>
                             Osobnými údajmi sa rozumejú všetky informácie o identifikovanej alebo identifikovateľnej fyzickej osobe; identifikovateľnou fyzickou osobou je fyzická osoba, ktorú možno priamo alebo nepriamo identifikovať, najmä odkazom na určitý identifikátor, napríklad meno, identifikačné číslo, lokačné údaje, sieťový identifikátor alebo na jeden alebo viac zvláštnych prvkov fyzické, fyziologické, genetické, psychické, ekonomické, kultúrne alebo spoločenské identity tejto fyzickej osoby.
@@ -61,7 +55,6 @@ export default function Gdpr() {
                 <div className='gdpr-text'>
                     <ol className='gdpr-list' >
                         <li>
-
                             Správca spracováva osobné údaje, ktoré ste mu poskytol/a alebo osobné údaje, ktoré správca získal na základe odoslania formuláru.
                         </li>
                         <li>
@@ -154,7 +147,6 @@ export default function Gdpr() {
                             Správca je oprávnený tieto podmienky zmeniť. Novú verziu podmienok ochrany osobných údajov zverejní na svojich internetových stránkach a zároveň Vám zašle novú verziu týchto podmienok Vašu e-mailovú adresu, ktorú ste správcovi poskytol/a.
                         </li>
                     </ol>
-
                 </div>
             </div>
             <Footer />

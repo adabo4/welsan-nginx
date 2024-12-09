@@ -1,17 +1,17 @@
 import Lines from "../Lines/Lines";
-import "./engdeti.css"
+import "./engchildren.css"
 import Footer from "../Footer/Footer";
 import EmailJSForm from "../EmailJSForm";
 import MobileNavbar from "../Navbar/MobileNavbar";
 
-export default function EngDeti() {
+export default function EngChildren() {
     return (
         <>
             <section className="english-children">
                 <MobileNavbar />
                 <div className="eng-children-container">
                     <div className="headline-box">
-                        <div className='ponuka-headline'>
+                        <div className='option-headline'>
                             Angličtina deti
                         </div>
                         <Lines ></Lines>

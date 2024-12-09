@@ -1,13 +1,13 @@
 import React from 'react';
 import Lines from "./Lines/Lines";
-import './ponuka.css';
+import './menu.css';
 
-const Ponuka = () => {
+const Menu = () => {
     return (
         <div>
-            <div className="ponuka-box">
+            <div className="menu-box">
                 <div id="ponuka" className="headline-box" >
-                    <div className='ponuka-headline'>
+                    <div className='option-headline'>
                         Ponuka kurzov
                     </div>
                     <Lines ></Lines>
@@ -37,4 +37,4 @@ const Ponuka = () => {
     )
 }
 
-export default Ponuka
+export default Menu

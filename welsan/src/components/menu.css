@@ -1,28 +1,28 @@
-.ponuka-box{
+.menu-box {
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
 }
 
-.ponuka-headline{
+.option-headline {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 57px;
     line-height: 1.1em;
 
 }
 
-.headline-box{
+.headline-box {
     margin: 4em 0;
     width: 100%;
 }
 
-.headline-box .line-container{
+.headline-box .line-container {
     max-width: 100%;
 }
 
 /*  ----------- */
 
-.learning-style-box{
+.learning-style-box {
     display: flex;
     justify-content: center;
     /* flex: 1; */
@@ -32,23 +32,26 @@
 
 
 
- .learning-style-box img{
-   width: 100%;
+.learning-style-box img {
+    width: 100%;
     height: auto;
     object-fit: contain;
 
- 
-  
-    
+
+
+
 }
- .learning-style.left{
-    width: 50%;;
+
+.learning-style.left {
+    width: 50%;
+    ;
 }
 
 
-.learning-style.right{
+.learning-style.right {
     width: 50%;
 }
+
 /*
 
 .learning-style.right p{
@@ -62,42 +65,42 @@
     font-family: var(--h1-li-font-enriqueta);
 } */
 
-@media  screen and (max-width: 1110px) {
-    .learning-style-box{
+@media screen and (max-width: 1110px) {
+    .learning-style-box {
         flex-direction: column;
     }
-    
+
 }
 
-.card{
+.card {
     max-width: 1000px;
     margin: 0 auto;
     position: relative;
     display: flex;
-   
-  
-        
+
+
+
 }
 
-.imgBx{
+.imgBx {
     width: 500px;
     flex: 0 0 400px;
-   
+
 
 }
 
-.imgBx img{
+.imgBx img {
     width: 100%;
     border-radius: 50%;
 }
 
-.content{
+.content {
     margin-left: 3rem;
     width: 50%;
-    
+
 }
 
-.content h3{
+.content h3 {
     text-transform: uppercase;
 }
 
@@ -106,49 +109,48 @@
     font-family: var(--p-font);
     font-size: 14px;
     line-height: 1.6em;
-    
+
 }
 
 
-@media  screen and (max-width: 1110px) {
-    .card{
+@media screen and (max-width: 1110px) {
+    .card {
         flex-direction: column;
         margin: 0 auto;
         align-items: center;
-       
+
     }
 
-    .content{
+    .content {
         margin-top: 2rem;
         width: 70%;
-       
+
     }
-    
+
 }
 
-@media screen and (max-width: 768px){
-    .headline-box{
+@media screen and (max-width: 768px) {
+    .headline-box {
         margin: 4em auto;
         width: 100%;
         text-align: center;
     }
 
-    .headline-box .line-container{
+    .headline-box .line-container {
         margin: 0 auto;
     }
-    
-    .imgBx{
+
+    .imgBx {
         width: 250px;
         flex: 0 0 250px;
-    
+
     }
 
-    .content{
+    .content {
         margin: 0 auto;
     }
 
-    
+
 }
 
 /* ---------------*/
-

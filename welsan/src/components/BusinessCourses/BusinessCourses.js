@@ -1,25 +1,25 @@
 import Lines from "../Lines/Lines"
-import "./firemnekurzy.css"
+import "./businesscourses.css"
 import Footer from "../Footer/Footer"
 import Slickslide from "../Slickslide/Slickslide"
 import MobileNavbar from "../Navbar/MobileNavbar"
 
-export default function FiremneKurzy() {
+export default function BusinessCourses() {
 
     return (
         <>
-            <div className="firemne-kurzy">
+            <div className="business-courses">
                 <MobileNavbar />
-                <div className="firemne-kurzy-container">
+                <div className="business-courses-container">
 
                     <div className="headline-box">
-                        <div className='ponuka-headline'>
+                        <div className='option-headline'>
                             Pre Váš biznis
                         </div>
                         <Lines ></Lines>
                     </div>
 
-                    <div className="firemne-kurzy-bubbles-box">
+                    <div className="business-courses-bubbles-box">
                         <div className="black-bubble">
                             <div className="black-bubble-box">
                                 <hr className="first-line" />
@@ -38,7 +38,7 @@ export default function FiremneKurzy() {
 
                     </div>
 
-                    <div className="firemne-kurzy-text">
+                    <div className="business-courses-text">
                         <p>​Komunikácia v angličtine sa v dobe globalizácie stáva nevyhnutnosťou i pre nižší manažment.
                             Zabezpečte plynulý chod Vašej firmy a ponúknite zamestnanecké benefity vo forme kurzov anglického jazyka vo WELSANe. </p>
                         <p>Dokážeme vyjsť v ústrety zamestnávateľom s akýmikoľvek požiadavkami.

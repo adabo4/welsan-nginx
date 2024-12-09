@@ -1,4 +1,4 @@
-const detidata = [
+const childrenData = [
     {
         title: "Kurzy Rozprávkovo",
         desc: "Hračky, autíčka, kvety i tablet - to všetko využijeme pri nadobúdaní jazyka s tými najmenšími.",
@@ -11,4 +11,4 @@ const detidata = [
     }
 ]
 
-export default detidata;
+export default childrenData;
