@@ -1,16 +1,14 @@
 import Lines from "../Lines/Lines";
 import Footer from "../Footer/Footer";
-import "./tlmocenie.css"
+import "./translation.css"
 import MobileNavbar from "../Navbar/MobileNavbar";
 
-export default function Tlmocenie() {
+export default function Translation() {
     return (
         <>
-            <div className="tlmocenie-container">
+            <div className="translation-container">
                 <MobileNavbar />
-
-
-                <div className="tlmocenie-container-druhy">
+                <div className="translation-container-druhy">
                     <div className="headline-box">
                         <div className='option-headline'>
                             Tlmočenie a Preklady
@@ -18,11 +16,11 @@ export default function Tlmocenie() {
                         <Lines ></Lines>
                     </div>
 
-                    <div className="tlmocenie-content">
-                        <div className="tlmocenie-left">
+                    <div className="translation-content">
+                        <div className="translation-left">
 
                             <h2>Profesionálne preklady</h2>
-                            <div className="small-circle-tlmocenie"></div>
+                            <div className="small-circle-translation"></div>
                             <h2>Expresné vyhotovenie</h2>
                             <h2>Tlmočenie na Slovensku i v zahraničí</h2>
                             <p>Ponúkam Vám svoje služby profesionálnej tlmočníčky. Úspešne som tlmočila obchodné rokovania za okrúhlym stolom i priamo vo výrobe, na Slovensku i v zahraničí.
@@ -32,9 +30,9 @@ export default function Tlmocenie() {
                                 ktorí využili moje tlmočnícke služby k svojej spokojnosti. Pridajte sa k nim aj Vy. </p>
                         </div>
 
-                        <div className="tlmocenie-right">
-                            <div className="tlmocenie-bubble">
-                                <div className="tlmocenie-bubble-text">
+                        <div className="translation-right">
+                            <div className="translation-bubble">
+                                <div className="translation-bubble-text">
                                     <h2>Preklady</h2>
                                     <hr style={{ width: 200, borderBottomWidth: 2 }} className="first-line" />
                                     <hr style={{ width: 200, marginTop: 5, opacity: 0.7 }} className="second-line" />
@@ -49,7 +47,6 @@ export default function Tlmocenie() {
                         </div>
                     </div>
                 </div>
-
                 <Footer />
             </div>
         </>

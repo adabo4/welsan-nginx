@@ -1,4 +1,4 @@
-.tlmocenie-container-druhy {
+.translation-container-druhy {
     max-width: 1000px;
     width: 100%;
     margin: 1rem auto;
@@ -14,7 +14,7 @@
     margin: 0 auto;
 } */
 
-.tlmocenie-content {
+.translation-content {
     display: flex;
     width: 100%;
     position: relative;
@@ -23,7 +23,7 @@
 
 }
 
-.tlmocenie-left {
+.translation-left {
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
 
 }
 
-.tlmocenie-left .small-circle-tlmocenie {
+.translation-left .small-circle-translation {
     background-color: #DD3782;
     z-index: -1;
     width: 100px;
@@ -47,13 +47,13 @@
 
 
 /* 
-.tlmocenie-h2{
+.translation-h2{
     width: 100%;
     margin: 0 auto;
    
 } */
 
-.tlmocenie-left h2 {
+.translation-left h2 {
     font-family: var(--h1-li-font-enriqueta);
     font-size: 35px;
     font-weight: 400;
@@ -64,7 +64,7 @@
 }
 
 
-.tlmocenie-left p {
+.translation-left p {
     font-family: var(--p-font);
     font-size: 14px;
     line-height: 1.3em;
@@ -75,7 +75,7 @@
 }
 
 
-.tlmocenie-bubble {
+.translation-bubble {
     width: 350px;
     height: 350px;
     border-radius: 50%;
@@ -88,7 +88,7 @@
 
 }
 
-.tlmocenie-bubble-text {
+.translation-bubble-text {
     position: absolute;
     text-transform: none;
     color: white;
@@ -98,7 +98,7 @@
 }
 
 
-.tlmocenie-bubble-text h2 {
+.translation-bubble-text h2 {
     font-size: 40px;
     line-height: 1.1em;
     font-weight: 400;
@@ -106,21 +106,21 @@
 
 }
 
-.tlmocenie-bubble-text p {
+.translation-bubble-text p {
 
 
     font-size: 20px;
     font-family: var(--h1-li-font-enriqueta);
 }
 
-.tlmocenie-bubble-text p:nth-of-type(3) {
+.translation-bubble-text p:nth-of-type(3) {
     font-size: 32px;
     line-height: 1.2em;
 
     font-family: var(--josefin-font);
 }
 
-.tlmocenie-bubble-text p:nth-of-type(4) {
+.translation-bubble-text p:nth-of-type(4) {
     font-size: 24px;
     line-height: 1.2em;
     font-family: var(--josefin-font);
@@ -128,25 +128,25 @@
 
 @media screen and (max-width: 1110px) {
 
-    .tlmocenie-content {
+    .translation-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
 
-    .tlmocenie-left {
+    .translation-left {
 
         /* text-align: center; */
         width: 80%;
         margin: 0 auto;
     }
 
-    .tlmocenie-left h2 {
+    .translation-left h2 {
         margin-left: 60px;
     }
 
-    .tlmocenie-left p {
+    .translation-left p {
         width: 100%;
         max-width: 700px;
 
@@ -154,7 +154,7 @@
 
 
 
-    .tlmocenie-container-druhy {
+    .translation-container-druhy {
         width: 100%;
     }
 
@@ -163,40 +163,40 @@
 
 @media screen and (max-width:550px) {
 
-    .tlmocenie-left {
+    .translation-left {
         text-align: center;
         margin: 0 auto;
     }
 
-    .tlmocenie-left h2 {
+    .translation-left h2 {
         font-size: 30px;
         margin: 0 auto;
     }
 
-    .tlmocenie-left .small-circle-tlmocenie {
+    .translation-left .small-circle-translation {
         transform: translate(20px, -40px);
     }
 
 }
 
 @media screen and (max-width: 290px) {
-    .tlmocenie-bubble {
+    .translation-bubble {
         width: 250px;
         height: 250px;
 
     }
 
-    .tlmocenie-bubble-text {
+    .translation-bubble-text {
         margin-bottom: 3rem;
     }
 
-    .tlmocenie-bubble-text h2 {
+    .translation-bubble-text h2 {
         font-size: 25px;
 
 
     }
 
-    .tlmocenie-bubble-text p {
+    .translation-bubble-text p {
         font-size: 15px;
 
     }
@@ -206,7 +206,7 @@
         font-size: 30px;
     }
 
-    .tlmocenie-left .small-circle-tlmocenie {
+    .translation-left .small-circle-translation {
         transform: translate(1px, -40px);
     }
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
@@ -10,7 +9,7 @@ import {
 import PonukaKurzov from './components/PonukaKurzov';
 import BusinessCourses from './components/BusinessCourses/BusinessCourses';
 import WhereWeAt from './components/WhereWeAt/WhereWeAt';
-import Tlmocenie from './components/Tlmocenie/Tlmocenie';
+import Translation from './components/Translation/Translation';
 import EngAdults from './components/EngAdults/EngAdults';
 import Workshop from './components/Workshop/Workshop'
 import EngChildren from './components/EngChildren/EngChildren'
@@ -38,7 +37,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/tlmocenie-a-preklady",
-    element: <Tlmocenie></Tlmocenie>
+    element: <Translation></Translation>
   },
   {
     path: "/ang-dospeli",
