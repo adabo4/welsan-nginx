@@ -221,6 +221,7 @@ export default function EmailJSForm() {
                             placeholder="Sem napíšte odkaz:"
                             cols="30"
                             rows="10"
+                            maxLength={500}
                             value={formData.message}
                             onChange={handleMessage}
                             onBlur={() => {
