@@ -4,6 +4,10 @@ import './emailjsform.css';
 
 export default function EmailJSForm() {
 
+    const serviceID = process.env.REACT_APP_SERVICE_ID;
+    const templateID = process.env.REACT_APP_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -93,7 +97,7 @@ export default function EmailJSForm() {
                 contact_number: formData.number
             };
 
-            emailjs.send('service_i3j4zf8', 'template_kfz3q6j', templateParams, '8e0x-teEx9zwXPXt1')
+            emailjs.send(serviceID, templateID, templateParams, publicKey)
                 .then((result) => {
                     setSent(true);
                     resetForm();
