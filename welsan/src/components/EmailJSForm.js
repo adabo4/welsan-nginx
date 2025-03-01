@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import './emailjsform.css';
+import axios from "axios";
 
 export default function EmailJSForm() {
-
-    const serviceID = process.env.REACT_APP_SERVICE_ID;
-    const templateID = process.env.REACT_APP_TEMPLATE_ID;
-    const publicKey = process.env.REACT_APP_PUBLIC_KEY;
+    const axiosInstance = axios.create({ baseURl: process.env.REACT_APP_API_URL });
 
     const [formData, setFormData] = useState({
         name: '',
@@ -78,8 +75,15 @@ export default function EmailJSForm() {
         }, 3000);
     };
 
-    const formSubmit = (e) => {
+    const [cooldown, setCooldown] = useState(false);
+
+    const formSubmit = async (e) => {
         e.preventDefault();
+
+        if (cooldown) {
+            setErrorMessage("Prosím počkajte pred odoslaním ďalšej správy.");
+            return;
+        }
 
         if (
             formData.name.length >= 2 &&
@@ -87,30 +91,44 @@ export default function EmailJSForm() {
             formData.message.trim() !== ''
         ) {
             setIsLoading(true);
+            setCooldown(true);
 
             const templateParams = {
                 from_name: formData.name,
-                to_name: 'infowelsan@gmail.com',
+                to_name: 'adabo4@gmail.com',
                 subject: `Message from ${formData.name}`,
                 message: formData.message,
                 user_email: formData.email,
                 contact_number: formData.number
             };
 
-            emailjs.send(serviceID, templateID, templateParams, publicKey)
-                .then((result) => {
+            try {
+                const response = await axiosInstance.post('/api/send-email', templateParams);
+                console.log("Response:", response.data);
+
+                const data = response.data;
+
+                console.log(data)
+
+                if (response.status === 200) {
                     setSent(true);
+                    setErrorMessage('');
                     resetForm();
-                })
-                .catch((error) => {
-                    console.log('Email not sent :(');
-                    console.log(error);
-                    setErrorMessage('Správa nebola odoslaná :( ');
-                    resetForm();
-                })
-                .finally(() => {
-                    setIsLoading(false);
-                });
+                } else {
+                    setErrorMessage('Správa nebola odoslaná :(');
+                }
+            } catch (error) {
+                console.error(error);
+                if (error.response && error.response.status === 429) {
+                    setErrorMessage("Príliš veľa žiadostí, skúste znova neskôr.");
+                } else {
+                    setErrorMessage("Správa nebola odoslaná :(");
+                }
+            } finally {
+                setIsLoading(false);
+                setTimeout(() => { setCooldown(false); setErrorMessage(''); }, 5000);
+
+            }
         } if (
             formData.name === ""
         ) {
@@ -221,7 +239,7 @@ export default function EmailJSForm() {
                             placeholder="Sem napíšte odkaz:"
                             cols="30"
                             rows="10"
-                            maxLength={500}
+                            maxLength={1000}
                             value={formData.message}
                             onChange={handleMessage}
                             onBlur={() => {
@@ -246,7 +264,7 @@ export default function EmailJSForm() {
                     <div className={sent ? 'msg msgAppear' : errorMessage ? 'error-msg' : 'msg'}>
                         {sent ? 'Správa bola odoslaná!' : errorMessage || null}
                     </div>
-                    <button type="submit" className="submit-btn" disabled={isLoading}>
+                    <button type="submit" className="submit-btn" disabled={isLoading || cooldown}>
                         {isLoading ? 'Odosiela sa' : 'Odoslať'}
                     </button>
                 </form>
