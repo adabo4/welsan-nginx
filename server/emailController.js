@@ -6,7 +6,7 @@ const sendEmail = async (req, res) => {
     const { from_name, user_email, message, contact_number } = req.body;
 
     const emailpass = process.env.REACT_APP_PASS;
-    const emaillogin = "infowelsan@gmail.com"
+    const emaillogin = process.env.REACT_APP_EMAIL_LOGIN
 
 
     const mailOptions = {
