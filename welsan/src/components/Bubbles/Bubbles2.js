@@ -37,8 +37,8 @@ export default function Bubbles2() {
                 </div>
 
                 <div className="item kontakt-2">
-                    <p className='contact-us'><HashLink to="/kde-nas-najdete#contact">Kontaktuj nás</HashLink>
-                        <hr /></p>
+                    <p className='contact-us'><HashLink to="/kde-nas-najdete#contact"><u className="lll">Kontaktuj nás</u></HashLink>
+                    </p>
 
                 </div>
 

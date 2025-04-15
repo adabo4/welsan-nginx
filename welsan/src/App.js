@@ -4,7 +4,7 @@ import About from './components/About/About';
 import Kurzy from './components/Kurzy/Kurzy';
 import Footer from './components/Footer/Footer';
 import Bubbles2 from './components/Bubbles/Bubbles2';
-import KurzyHeadlineWinter from './components/Kurzy/KurzyHeadlineWinter.js';
+import KurzyHeadlineSpring from './components/Kurzy/KurzyHeadlineSpring.js';
 import './components/BusinessCourses/businesscourses.css'
 import './components/menu.css'
 import './components/PonukaKurzov'
@@ -18,7 +18,7 @@ function App() {
       <Bubbles2></Bubbles2>
       <About></About>
       <div className="kurzy-container">
-        <KurzyHeadlineWinter></KurzyHeadlineWinter>
+        <KurzyHeadlineSpring></KurzyHeadlineSpring>
       </div>
       <Kurzy></Kurzy>
       <Footer></Footer>
