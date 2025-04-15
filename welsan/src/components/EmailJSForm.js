@@ -95,7 +95,7 @@ export default function EmailJSForm() {
 
             const templateParams = {
                 from_name: formData.name,
-                to_name: 'adabo4@gmail.com',
+                to_name: 'infowelsan@gmail.com',
                 subject: `Message from ${formData.name}`,
                 message: formData.message,
                 user_email: formData.email,
