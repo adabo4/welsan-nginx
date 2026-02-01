@@ -1,9 +1,8 @@
-// Import nodemailer directly to avoid path issues
 import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
     console.log('Function started, method:', req.method);
-    
+
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Method not allowed' });
     }
@@ -26,7 +25,7 @@ export default async function handler(req, res) {
         }
 
         console.log('Creating transporter...');
-        const transporter = nodemailer.createTransporter({
+        const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
                 user: emaillogin,
