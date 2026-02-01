@@ -8,7 +8,6 @@ import './components/BusinessCourses/businesscourses.css'
 import './components/menu.css'
 import './components/PonukaKurzov'
 import MobileNavbar from './components/Navbar/MobileNavbar';
-import KurzyHeadlineAutumn from './components/Kurzy/KurzyHeadlineAutumn.js';
 import KurzyHeadlineSpring from './components/Kurzy/KurzyHeadlineSpring.js';
 
 
