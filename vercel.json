@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "buildCommand": "cd welsan && npm install && npm run build",
+  "outputDirectory": "welsan/build",
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
