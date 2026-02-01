@@ -10,7 +10,7 @@ export default function KurzyHeadlineSpring() {
                 <img src={butterfly} alt="butterfly-img" className='butterfly-img' />
                 <div className="shapes">
                     <div className="small-circle"></div>
-                    <h3>KURZY 2025 - Spring term</h3>
+                    <h3>KURZY 2026 - Spring term</h3>
                     <hr className="line" />
                     <hr className="thin" />
                 </div>

@@ -9,6 +9,8 @@ import './components/menu.css'
 import './components/PonukaKurzov'
 import MobileNavbar from './components/Navbar/MobileNavbar';
 import KurzyHeadlineAutumn from './components/Kurzy/KurzyHeadlineAutumn.js';
+import KurzyHeadlineSpring from './components/Kurzy/KurzyHeadlineSpring.js';
+
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
       <About></About>
       <div className="kurzy-container">
 
-        <KurzyHeadlineAutumn></KurzyHeadlineAutumn>
+        <KurzyHeadlineSpring></KurzyHeadlineSpring>
       </div>
       <Kurzy></Kurzy>
       <Footer></Footer>
