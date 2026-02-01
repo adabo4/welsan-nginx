@@ -3,7 +3,7 @@ import './emailjsform.css';
 import axios from "axios";
 
 export default function EmailJSForm() {
-    const axiosInstance = axios.create({ baseURL: process.env.REACT_APP_API_URL || '' });
+    const axiosInstance = axios.create({ baseURl: process.env.REACT_APP_API_URL || '' });
 
     const [formData, setFormData] = useState({
         name: '',
